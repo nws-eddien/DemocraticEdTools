@@ -74,8 +74,7 @@ a.bottom-menu-link:link {
 }
 .card-content {
   padding: 8px;
-  display: flex;
-  justify-content: center;
+  display: block;
   flex-wrap: wrap;
 }
 .card-actions {
@@ -86,9 +85,10 @@ a.bottom-menu-link:link {
 .form__group {
   font-size: medium;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   margin-bottom: 4px;
   align-items: center;
+  padding: 4px;
 }
 .form__input {
   font-size: medium;
@@ -97,4 +97,8 @@ a.bottom-menu-link:link {
   border-radius: 17px;
   border: 1px solid #000000;
   margin-left: 8px;
+}
+.checkbox {
+  width: 24px;
+  height: 24px;
 }

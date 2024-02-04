@@ -1,5 +1,5 @@
 class UserManager::UsersController < ApplicationController
-  before_action :set_user, only: %i[ show edit update destroy pin_generator]
+  before_action :set_user, only: %i[ show edit update destroy pin_generator generate_pin]
   include Pundit::Authorization
   # GET /users or /users.json
   def index
@@ -20,7 +20,17 @@ class UserManager::UsersController < ApplicationController
   end
 
   def pin_generator
-    @pin
+    @pin = @user.generate_pin
+  end
+
+  def generate_pin
+    respond_to do |format|
+      if @user.update(user_params)
+        format.html { redirect_to user_manager_pin_generator_url(@user), notice: "User was successfully updated." }
+      else
+        format.html { render :edit, status: :unprocessable_entity }
+      end
+    end
   end
   # POST /users or /users.json
   def create
@@ -62,6 +72,6 @@ class UserManager::UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:name, :password)
+      params.require(:user).permit(:name, :password, :pin, :easy_pin, :pin_length)
     end
 end

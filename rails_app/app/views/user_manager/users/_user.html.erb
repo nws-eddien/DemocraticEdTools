@@ -5,8 +5,8 @@
       User
     </div>
     <div class="card-content">
-      Pin: <%= user.pin %>
       <%= turbo_frame_tag "pin_generator_#{user.id}" do%>
+      Pin: <%= user.pin %>
       <%= link_to "edit",  user_manager_pin_generator_path(user), class: "btn btn-yellow"%>
       <% end %>
     </div>

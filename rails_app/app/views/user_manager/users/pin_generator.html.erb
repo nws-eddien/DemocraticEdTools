@@ -1,9 +1,23 @@
 <%= turbo_frame_tag "pin_generator_#{@user.id}" do%>
-  <%= form_with do |form| %>
-    <%= form.text_field :pin, :hidden => true, value: @user.pin%>
-    <%= form.range_field :digits, :min => 5, :max => 8%>
-    <%= form.check_box :easy %>
-    <%= form.submit "generieren" %>
-    <%= form.submit "speichern" %>
+
+  <%= simple_form_for [:user_manager, @user] do |f| %>
+    <div class="d-flex flex-wrap mb-4">
+      <%= f.input :pin, :as => :hidden, input_html: {value: @pin, class: "absolute"}%>
+      <div>
+        <% @pin.each_char do |digit| %>
+          <input class="generated_pin_input" value="<%= digit %>" readonly>
+        <% end %>
+      </div>
+      <%= f.button :submit, 'speichern', :class => "btn-green ml-2" %>
+    </div>
   <% end %>
+
+  <%= simple_form_for [:user_manager, @user], :url => user_manager_generate_pin_path do |f| %>
+    <div class="d-flex flex-column">
+      <%= f.input :easy_pin, :label => "leichter Pin", :input_html => { :class => "checkbox" } %>
+      <%= f.input :pin_length, :label => "Pin Länge",  :input_html => { :class => "pin_length_input" } %>
+      <%= f.button :submit, "Pin generieren!"%>
+    </div>
+  <% end %>
+
 <% end %>

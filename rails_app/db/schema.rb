@@ -129,6 +129,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_22_152717) do
     t.string "email"
     t.string "name", default: "", null: false
     t.string "pin"
+    t.integer "pin_length", default: 5
+    t.boolean "easy_pin", default: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"

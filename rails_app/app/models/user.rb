@@ -32,10 +32,10 @@ has_one :media_time
     end
   end
 
-  def generate_pin(digits=6, easy=false)
-    digits= digits.to_i
+  def generate_pin
+    digits= pin_length
     doubles = 0
-    if easy
+    if easy_pin
       doubles = digits/2
     end
     loop do

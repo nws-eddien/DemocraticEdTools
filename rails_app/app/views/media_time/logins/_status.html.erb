@@ -1,0 +1,6 @@
+<div class="card-content">
+  Status: <%= media_time.status %>
+</div>
+<div class="card-actions">
+  <%= button_to "toggle", media_time_logins_toggle_path(id: media_time.id) , method: :post, class: 'btn' %>
+</div>

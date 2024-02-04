@@ -1,0 +1,15 @@
+rails_app/tmp
+rails_app/node_modules
+rails_app/access_data
+rails_app/log
+rails_app/config/master.key
+rails_app/config/credentials.yml.enc
+tmp
+data/tmp
+data/redis
+node_modules
+redis
+.env
+docker-compose/.env
+docker-compose/backups
+

@@ -1,0 +1,17 @@
+ <div class="container">
+    <div class="container-title">
+      Login Display
+    </div>
+    <div class="container-content">
+      <div class="card">
+          <%= turbo_stream_from "login_display" %>
+          <%= render "logins_circular" %>
+      </div>
+    </div>
+   <div class="container-actions">
+     <%= form_with url: media_time_logins_toggle_path do |form| %>
+       <%= form.password_field :pin %>
+       <%= form.button :submit %>
+     <% end %>
+   </div>
+  </div>

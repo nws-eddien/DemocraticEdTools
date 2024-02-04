@@ -1,0 +1,77 @@
+version: '3.9'
+
+services:
+
+  dst__database-dev:
+    container_name: dst_db_dev
+    image: postgres
+    volumes:
+      - ../data/tmp/dbfake:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: "${pg_pass}"
+      POSTGRES_USER: "${pg_user}"
+    links: 
+        - dst__redis-dev
+
+
+
+
+  dst__rails-dev:
+    container_name: dst_rails_dev
+    build: 
+      context: ../rails_app
+      dockerfile: Dockerfile_dev
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    ports:
+      - "3101:3000"
+    depends_on:
+      - dst__database-dev
+      - dst__redis-dev
+    environment:
+      PG_USER: "${pg_user}"
+      PG_PASSWORD: "${pg_pass}"
+      PG_HOST: dst__database-dev
+      PG_DB: "${pg_database}"
+      REDIS_URL: redis://dst__redis-dev:6379
+      REDIS_HOST: dst__redis-dev
+      REDIS_PORT: 6379
+      EMAIL_HOST: "${email_host}"
+      EMAIL_USER: "${email_user}"
+      EMAIL_PASSWORD: "${email_password}"
+    volumes:
+      - '../rails_app:/app'
+
+
+
+
+  dst__redis-dev: 
+    image: redis
+    volumes:
+      - '../data/redis:/data'
+
+
+  sidekiq-dev:
+    build: 
+      context: ../rails_app
+      dockerfile: Dockerfile_dev
+    volumes: 
+      - ../rails_app:/app
+    depends_on:
+      - dst__rails-dev
+      - dst__redis-dev
+      - dst__database-dev
+    environment:
+      PG_USER: "${pg_user}"
+      PG_PASSWORD: "${pg_pass}"
+      PG_HOST: dst__database-prod
+      PG_DB: "${pg_database}"
+      REDIS_URL: redis://dst__redis-dev:6379
+      REDIS_HOST: dst__redis-dev
+      REDIS_PORT: 6379
+      EMAIL_HOST: "${email_host}"
+      EMAIL_USER: "${email_user}"
+      EMAIL_PASSWORD: "${email_password}"
+    command: bundle exec sidekiq
+
+
+

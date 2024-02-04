@@ -1,0 +1,10 @@
+MediaTimeAdmin:
+  name: media_time_admin
+  membershiplevels: [super_admin]
+MediaTimeModerator:
+  name: media_time_moderator
+  membershiplevels: [super_admin]
+GroupsAdmin:
+  name: groups_admin
+  permissions: ["indexGroups", "createGroups"]
+  membershiplevels: [super_admin]

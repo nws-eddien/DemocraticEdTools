@@ -1,0 +1,2 @@
+module MediaTime::MediaGlobalSettingsHelper
+end

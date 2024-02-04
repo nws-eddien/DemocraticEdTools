@@ -1,0 +1,13 @@
+class Membershiplevel < ApplicationRecord
+    belongs_to :group
+    has_many :memberships
+    has_many :users, through: :memberships
+    accepts_nested_attributes_for :users
+    has_and_belongs_to_many :roles
+    validates_uniqueness_of :name, conditions: -> (membershiplevel) { where(group_id: membershiplevel.group_id ) }
+
+
+    def is_default
+        self.group.default_membershiplevel_id == self.id
+    end
+end

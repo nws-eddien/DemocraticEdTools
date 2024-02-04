@@ -1,0 +1,17 @@
+admin:
+  email: admin@no-email
+  encrypted_password: <%= Devise::Encryptor.digest(User, '123') %>
+  name: admin
+  membershiplevels: [super_admin]
+user1:
+  email: user1@no-email
+  encrypted_password: <%= Devise::Encryptor.digest(User, '123') %>
+  name: user1
+  membershiplevels: [team_basic]
+user2:
+  email: user2@no-email
+  encrypted_password: <%= Devise::Encryptor.digest(User, '123') %>
+  name: user2
+  roles: [MediaTimeModerator]
+
+

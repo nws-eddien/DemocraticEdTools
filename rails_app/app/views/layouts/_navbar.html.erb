@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <span class="navbar-title">
+    Democratic School Tools
+  </span>
+  <div class="d-flex align-center">
+    <% if user_signed_in? %>
+      <span class="mr-2"><%= current_user.name.capitalize %></span>
+      <%= button_to "Sign out",
+                    destroy_user_session_path,
+                    method: :delete,
+                    class: "btn btn-red" %>
+    <% else %>
+      <%= link_to "Sign in",
+                  new_user_session_path,
+                  class: "btn btn-green" %>
+    <% end %>
+  </div>
+
+</nav>

@@ -1,0 +1,19 @@
+<div class="card">
+  <%= simple_form_for [:media_time, @media_global_settings] do |f|%>
+    <%= f.error_notification %>
+    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+    <div class="card-content form-fields flex-column">
+      <%= f.input :daily_time_limit, :label => 'Zeitlimit' %>
+      <%= f.input :penalty_factor %>
+      <div class="form__group">
+        <%= f.label "Verhalten bei Überschreitung" %>
+        <%= f.select :behavior_on_exceed, ["penalty", "ban"],{}, { class: 'form__input' }%>
+      </div>
+      <%= f.input :max_active_users%>
+    </div>
+    <div class="card-actions">
+      <%= f.button :submit %>
+    </div>
+  <% end %>
+</div>
+

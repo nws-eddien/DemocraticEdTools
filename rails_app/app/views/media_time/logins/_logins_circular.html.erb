@@ -1,0 +1,7 @@
+<%= turbo_frame_tag "login_display" do %>
+  <div class="card-content">
+  <% MediaTime.active_media_times.each do |media_time| %>
+    <%= render "media_time/logins/circular_progress", media_time: media_time %>
+  <% end %>
+  </div>
+<% end %>

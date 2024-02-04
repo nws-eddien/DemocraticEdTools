@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV['PG_HOST'] || '0.0.0.0' %> # From docker-compose service's name
+  username: <%= ENV['PG_USER'] || 'rails'%>
+  password: <%= ENV['PG_PASSWORD'] || 'postgresrails'%> # From web's service environment
+  pool: 30
+
+development:
+  <<: *default
+  database: <%= ENV['PG_DB'] %>
+
+test:
+  <<: *default
+  database: democratic_school_tools_1
+
+production:
+  <<: *default
+  database: <%= ENV['PG_DB'] %>

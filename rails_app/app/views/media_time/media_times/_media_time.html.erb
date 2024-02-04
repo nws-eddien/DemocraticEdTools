@@ -1,0 +1,14 @@
+<%= turbo_frame_tag "media_time_#{media_time.id}" do %>
+  <div class="card-content">
+    Medienzeit: <%= media_time.todays_time_limit/60 %> Minuten.
+  </div>
+  <%= turbo_stream_from "circular_progress_#{media_time.id}" %>
+
+    <%= render "media_time/logins/circular_progress", media_time: media_time %>
+
+  <% if policy(media_time).edit? %>
+    <div class="card-actions">
+      <%= link_to "edit", edit_media_time_media_time_path(media_time), class: 'btn btn-yellow' %>
+    </div>
+  <% end %>
+<% end %>

@@ -1,0 +1,16 @@
+<%= turbo_frame_tag "circular_progress_#{media_time.id}" do%>
+<% if media_time.active %>
+  <div class="card-content d-flex flex-column align-center">
+    <div class="mb-2"
+      data-controller="media-time-counter"
+      data-media-time-counter-timeleft-value="<%= media_time.time_left %>"
+      data-media-time-counter-timelimit-value="<%= media_time.todays_time_limit %>"
+    >
+      <div role="progressbar" aria-valuemin="0" aria-valuemax="100" style="<%= '--value:' +  (media_time.time_left * 100 / media_time.todays_time_limit).to_s %>">
+        <div class="progressbar-text"><%= format('%02d', media_time.time_left/60) %>:<%= format('%02d', media_time.time_left.abs%60) %></div>
+      </div>
+    </div>
+    <%= media_time.user.name.capitalize %>
+  </div>
+<% end %>
+<% end %>

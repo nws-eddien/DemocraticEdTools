@@ -1,0 +1,2 @@
+module MediaTime::MediaTimesHelper
+end

@@ -1,0 +1,13 @@
+<div class="container-title">
+  Show User - <%= @user.name.capitalize %>
+</div>
+
+<div class="container-content">
+  <%= render @user %>
+</div>
+
+<div class="container-actions d-flex">
+  <%= link_to "zurück", user_manager_users_path, class: 'btn' %>
+  <%= link_to "bearbeiten", edit_user_manager_user_path(@user), class: "btn btn-yellow" %>
+  <%= button_to "löschen", [:user_manager, @user], method: :delete, class: "btn btn-red" %>
+</div>

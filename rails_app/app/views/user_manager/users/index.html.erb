@@ -1,0 +1,27 @@
+<div class="container-title">
+  Users Index
+</div>
+<div class="container-content">
+  <div class="card">
+    <div class="card-content">
+      <table>
+        <% @users.each do |user| %>
+          <tr>
+            <td>
+              <%= user.name.capitalize %>
+            </td>
+            <td>
+              <%= link_to "anzeigen", user_manager_user_path(:id => user.id), class: 'btn' %>
+            </td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+    <div class="card-actions">
+      <%= link_to "New user", new_user_manager_user_path, class: 'btn btn-green' %>
+    </div>
+  </div>
+
+
+</div>
+

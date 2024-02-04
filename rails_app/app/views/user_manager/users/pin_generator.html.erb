@@ -1,0 +1,9 @@
+<%= turbo_frame_tag "pin_generator_#{@user.id}" do%>
+  <%= form_with do |form| %>
+    <%= form.text_field :pin, :hidden => true, value: @user.pin%>
+    <%= form.range_field :digits, :min => 5, :max => 8%>
+    <%= form.check_box :easy %>
+    <%= form.submit "generieren" %>
+    <%= form.submit "speichern" %>
+  <% end %>
+<% end %>

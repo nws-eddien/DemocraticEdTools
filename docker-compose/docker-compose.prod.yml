@@ -1,0 +1,96 @@
+version: '3.9'
+
+services:
+
+  dst__database-prod:
+    container_name: dst_database_prod
+    image: postgres
+    volumes:
+      - ./tmp/db8:/var/lib/postgresql/data
+      - ./backups:/backups
+    environment:
+      POSTGRES_PASSWORD: "${pg_pass}"
+      POSTGRES_USER: "${pg_user}"
+    links: 
+        - dst__redis-prod
+    restart: always
+
+
+  dst__rails-prod:
+    container_name: dst_rails_prod
+    build: 
+      context: ../rails_app
+      dockerfile: Dockerfile_prod
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - '../rails_app:/app'
+    ports:
+      - "3100:3000"
+    depends_on:
+      - dst__database-prod
+      - dst__redis-prod
+    environment:
+      PG_USER: "${pg_user}"
+      PG_PASSWORD: "${pg_pass}"
+      PG_HOST: dst__database-prod
+      PG_DB: "${pg_database}"
+      REDIS_URL: redis://dst__redis-prod:6379
+      REDIS_PORT: 6379
+      EMAIL_HOST: "${email_host}"
+      EMAIL_USER: "${email_user}"
+      EMAIL_PASSWORD: "${email_password}"
+    restart: always
+
+  dst__redis-prod: 
+    image: redis
+    volumes:
+      - './redis:/data'
+    restart: always
+
+  dst__sidekiq-prod:
+    build: 
+      context: ../rails_app
+      dockerfile: Dockerfile_prod
+    volumes: 
+      - ../rails_app:/app
+    depends_on:
+      - dst__rails-prod
+      - dst__redis-prod
+      - dst__database-prod
+    environment:
+      PG_USER: "${pg_user}"
+      PG_PASSWORD: "${pg_pass}"
+      PG_HOST: dst__database-prod
+      PG_DB: "${pg_database}"
+      REDIS_URL: redis://dst__redis-prod:6379
+      REDIS_PORT: 6379
+      EMAIL_HOST: "${email_host}"
+      EMAIL_USER: "${email_user}"
+      EMAIL_PASSWORD: "${email_password}"
+    command: bundle exec sidekiq
+    restart: always
+
+  dst__pgbackups-prod:
+    image: prodrigestivill/postgres-backup-local
+    restart: always
+    volumes:
+        - ./backups:/backups
+    links:
+        - dst__database-prod
+    depends_on:
+        - dst__database-prod
+    networks:
+      - waitinglist
+    environment:
+      POSTGRES_HOST: dst__database-prod
+      POSTGRES_DB: ${pg_database}
+      POSTGRES_USER: ${pg_user}
+      POSTGRES_PASSWORD: ${pg_pass}
+      POSTGRES_EXTRA_OPTS: -Z6 --schema=public --blobs
+      BACKUP_KEEP_DAYS: 7
+      BACKUP_KEEP_WEEKS: 4
+      BACKUP_KEEP_MONTHS: 6
+
+networks:
+  waitinglist: 
+    name: waitinglist

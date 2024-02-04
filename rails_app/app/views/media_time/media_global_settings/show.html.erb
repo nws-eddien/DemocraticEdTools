@@ -1,0 +1,11 @@
+<%= turbo_frame_tag "global_media_settings" do %>
+  <div class="container-title">
+    Global Media Settings
+  </div>
+  <div class="container-content">
+    <%= render @media_global_settings %>
+  </div>
+  <div class="container-actions">
+    <%= link_to "edit", media_time_media_global_setting_edit_path, class: "btn btn-yellow" %>
+  </div>
+<% end %>

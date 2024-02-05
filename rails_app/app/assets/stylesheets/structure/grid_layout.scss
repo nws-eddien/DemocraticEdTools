@@ -1,0 +1,44 @@
+.grid_layout {
+  display: grid;
+  grid-template-rows: 60px 40px 1fr 40px 40px;
+  grid-template-columns: 1fr 60px;
+  grid-auto-flow: column;
+  // background-color: #730E15;
+  height:100vh;
+}
+.grid_navbar {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.grid_nav_drawer {
+  //background-color: #9165d2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.grid_footer {
+  //background-color: #024abb;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.grid_main {
+  //background-color: #6dcbae;
+  overflow-y: auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr minmax(auto,648px) 1fr;
+}
+.grid_content {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+

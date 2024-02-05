@@ -10,13 +10,16 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="body">
+<body>
+  <div class="grid_layout">
     <%= render "layouts/navbar" %>
-    <div class="main">
-      <div class="container">
+    <div class="grid_main">
+      <div class="grid_content content">
         <%= yield %>
       </div>
     </div>
-    <%= render "layouts/bottom_menu" %>
-  </body>
+    <%= render "layouts/footer" %>
+  </div>
+</body>
+
 </html>

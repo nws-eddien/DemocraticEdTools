@@ -6,6 +6,8 @@ rails_app/config/master.key
 rails_app/config/credentials.yml.enc
 rails_app/public/assets
 tmp
+data
+data/minio
 data/tmp
 data/redis
 node_modules

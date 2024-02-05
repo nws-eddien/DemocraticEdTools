@@ -1,4 +1,4 @@
-.bottom-menu {
+.footer {
   position: relative;
   bottom: 0px;
   width: 100%;
@@ -11,11 +11,11 @@
   padding: 8px;
   z-index:13;
 }
-a.bottom-menu-link:visited {
+a.footer-link:visited {
   color: #ffffff;
   text-decoration: none;
 }
-a.bottom-menu-link:link {
+a.footer-link:link {
   font-size: large;
   font-weight: bold;
   color: #ffffff;

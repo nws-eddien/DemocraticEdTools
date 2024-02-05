@@ -1,0 +1,50 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"fcdbefa7-4531-4936-afb8-54f63075ea39\" name=\"Changes\" comment=\"grid_layout\">\n      <change afterPath=\"$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/content.scss\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/grid_layout.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/grid_layout.scss\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/rails_app/app/views/layouts/application.html.erb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/rails_app/app/views/layouts/application.html.erb\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"PUSH_TAGS\">\n      <GitPushTagMode>\n        <option name=\"argument\" value=\"--tags\" />\n        <option name=\"title\" value=\"All\" />\n      </GitPushTagMode>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"HighlightingSettingsPerFile\">\n    <setting file=\"file://$PROJECT_DIR$/rails_app/app/views/user_manager/users/_form.html.erb\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"NamedScopeManager\">\n    <order>\n      <scope name=\"Frontend\" />\n      <scope name=\"App\" />\n      <scope name=\"M-C-V\" />\n    </order>\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 5\n}</component>\n  <component name=\"ProjectId\" id=\"2bueWMnAFujoRNiK6kqUytSv6Gc\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"autoscrollToSource\" value=\"true\" />\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/home/schule/projects/tools_for_democratic_schools/rails_app/app/views/user_manager&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/rails_app/app/controllers/user_manager\" />\n      <recent name=\"$PROJECT_DIR$/rails_app/app/helpers/user_manager\" />\n      <recent name=\"$PROJECT_DIR$/rails_app/app/views/user_manager\" />\n      <recent name=\"$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure\" />\n      <recent name=\"$PROJECT_DIR$/rails_app/app/assets/stylesheets/components\" />\n    </key>\n  </component>\n  <component name=\"RunAnythingCache\">\n    <option name=\"myCommands\">\n      <command value=\"rails g scaffold group\" />\n    </option>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"SpringUtil\" SPRING_PRE_LOADER_OPTION=\"true\" RAKE_SPRING_PRE_LOADER_OPTION=\"true\" RAILS_SPRING_PRE_LOADER_OPTION=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"fcdbefa7-4531-4936-afb8-54f63075ea39\" name=\"Changes\" comment=\"\" />\n      <created>1707069422663</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1707069422663</updated>\n      <workItem from=\"1707069424060\" duration=\"875000\" />\n      <workItem from=\"1707070305116\" duration=\"14876000\" />\n      <workItem from=\"1707086303312\" duration=\"10935000\" />\n      <workItem from=\"1707155943743\" duration=\"4397000\" />\n      <workItem from=\"1707160392027\" duration=\"4066000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"pin_generator\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1707081552302</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1707081552302</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"grid_layout\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1707161661623</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1707161661623</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"title changed\" />\n    <MESSAGE value=\"pin_generator\" />\n    <MESSAGE value=\"grid_layout\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"grid_layout\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b37846ff4c2d782f892d311f7adda2138ffa5fa1)
++++ b/.idea/workspace.xml	(date 1707164813085)
+@@ -4,12 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="grid_layout">
+-      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/content.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/grid_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/grid_layout.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/application.html.erb" afterDir="false" />
+-    </list>
++    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="grid_layout" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -90,7 +85,7 @@
+       <workItem from="1707070305116" duration="14876000" />
+       <workItem from="1707086303312" duration="10935000" />
+       <workItem from="1707155943743" duration="4397000" />
+-      <workItem from="1707160392027" duration="4066000" />
++      <workItem from="1707160392027" duration="4368000" />
+     </task>
+     <task id="LOCAL-00001" summary="pin_generator">
+       <option name="closed" value="true" />
+@@ -108,7 +103,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1707161661623</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="grid_layout">
++      <option name="closed" value="true" />
++      <created>1707164805698</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1707164805698</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">

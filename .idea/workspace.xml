@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="grid_layout">
-      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/grid_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/grid_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/.dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/.dev.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/docker-compose.dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/docker-compose.prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/docker-compose.prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_user.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_user.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/environments/production.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/config/storage.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/storage.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +101,7 @@
       <workItem from="1707070305116" duration="14876000" />
       <workItem from="1707086303312" duration="10935000" />
       <workItem from="1707155943743" duration="4397000" />
-      <workItem from="1707160392027" duration="4066000" />
+      <workItem from="1707160392027" duration="10675000" />
     </task>
     <task id="LOCAL-00001" summary="pin_generator">
       <option name="closed" value="true" />
@@ -108,11 +119,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707161661623</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="grid_layout">
+      <option name="closed" value="true" />
+      <created>1707164805698</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707164805698</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="title changed" />

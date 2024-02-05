@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   devise :database_authenticatable, :validatable
-
-has_one :media_time
+  has_one_attached :avatar
+  has_one :media_time
   has_and_belongs_to_many :roles
   has_many :memberships
   has_many :membershiplevels, through: :memberships
@@ -13,39 +13,41 @@ has_one :media_time
 
   def self.create_dummys(number = 1)
     number.times do
-      charset=Array("a".."z")
+      charset = Array("a".."z")
       name = Array.new(8) { charset.sample }.join
-      User.create({:name => name, :email => name + "@no-mail"})
+      User.create({ :name => name, :email => name + "@no-mail" })
     end
   end
 
   def initialize_user
     self.create_media_time
-    if self.pin.nil? || self.pin.empty?  then self.pin=generate_pin end
+    if self.pin.nil? || self.pin.empty? then
+      self.pin = generate_pin
+    end
     save
   end
 
   def generate_password
     if self.password == nil
-      charset=Array("0".."9") + Array("a".."z")
-      self.password =  Array.new(5) { charset.sample }.join
+      charset = Array("0".."9") + Array("a".."z")
+      self.password = Array.new(5) { charset.sample }.join
     end
   end
 
   def generate_pin
-    digits= pin_length
+    digits = pin_length
     doubles = 0
     if easy_pin
-      doubles = digits/2
+      doubles = digits / 2
     end
     loop do
-      charset=Array("0".."9")
-      pin_array=[]
+      charset = Array("0".."9")
+      pin_array = []
       doubles.times do |d|
         sample = charset.sample
         pin_array << [sample, sample].join
       end
-      (digits-2*doubles).times do |d|
+      (digits - 2 * doubles).times do |d|
         pin_array << charset.sample
       end
 
@@ -60,7 +62,7 @@ has_one :media_time
   end
 
   def all_roles
-    (self.roles + self.memberships.collect { |membership| membership.roles}).flatten.uniq
+    (self.roles + self.memberships.collect { |membership| membership.roles }).flatten.uniq
   end
 
   def permissions
@@ -74,5 +76,5 @@ has_one :media_time
   def email_required?
     false
   end
-  
+
 end

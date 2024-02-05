@@ -38,6 +38,10 @@ services:
       EMAIL_HOST: "${email_host}"
       EMAIL_USER: "${email_user}"
       EMAIL_PASSWORD: "${email_password}"
+      MINIO_HOST: "${minio_host}"
+      MINIO_ROOT_USER: "${minio_user}"
+      MINIO_ROOT_PASSWORD: "${minio_pw}"
+      MINIO_BUCKET: "${minio_bucket}"
     volumes:
       - '../rails_app:/app'
 
@@ -50,7 +54,7 @@ services:
       - '../data/redis:/data'
 
 
-  sidekiq-dev:
+  dst__sidekiq-dev:
     build: 
       context: ../rails_app
       dockerfile: Dockerfile_dev
@@ -71,7 +75,20 @@ services:
       EMAIL_HOST: "${email_host}"
       EMAIL_USER: "${email_user}"
       EMAIL_PASSWORD: "${email_password}"
+      MINIO_HOST: "${minio_host}"
+      MINIO_ROOT_USER: "${minio_user}"
+      MINIO_ROOT_PASSWORD: "${minio_pw}"
+      MINIO_BUCKET: "${minio_bucket}"
     command: bundle exec sidekiq
 
-
-
+  minio:
+    image: minio/minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - ../data/minio:/data
+    environment:
+      MINIO_ROOT_USER: "${minio_user}"
+      MINIO_ROOT_PASSWORD: "${minio_pw}"
+    command: server --console-address ":9001" /data

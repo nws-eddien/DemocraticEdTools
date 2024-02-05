@@ -1,10 +1,12 @@
 <div>
-
+  <% if user.avatar.attached? %>
+  <%= image_tag user.avatar%>
+    <%end %>
   <div class="card">
     <div class="card-title">
       User
     </div>
-    <div class="card-content">
+    <div class="card-content"service_url>
       <%= turbo_frame_tag "pin_generator_#{user.id}" do%>
       Pin: <%= user.pin %>
       <%= link_to "edit",  user_manager_pin_generator_path(user), class: "btn btn-yellow"%>

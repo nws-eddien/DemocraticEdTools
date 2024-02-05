@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="M-C-V" pattern="file[tools_for_democratic_schools]:rails_app/app/controllers//*||file[tools_for_democratic_schools]:rails_app/app/models//*||file[tools_for_democratic_schools]:rails_app/app/views//*||file[tools_for_democratic_schools]:rails_app/app/helpers//*" />
+</component>

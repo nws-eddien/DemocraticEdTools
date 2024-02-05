@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   namespace :user_manager do
+    resources :groups
     resources :users
     get 'users/:id/pin_generator' => 'users#pin_generator', as: :pin_generator
     patch 'users/:id/generate_pin' => 'users#generate_pin', as: :generate_pin

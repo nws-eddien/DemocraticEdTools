@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Frontend" pattern="file[tools_for_democratic_schools]:rails_app/app/assets/stylesheets/*||file[tools_for_democratic_schools]:rails_app/app/views/*||file[tools_for_democratic_schools]:rails_app/app/assets/stylesheets//*||file[tools_for_democratic_schools]:rails_app/app/views//*" />
+</component>

@@ -1,0 +1,41 @@
+.btn {
+  background-color: var(--color-primary);
+  border-radius:4px;
+  border:1px solid #000000;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:13px;
+  font-weight:bold;
+  padding:6px 12px;
+  text-decoration:none;
+}
+.btn:hover {
+  background-color: var(--color-primary-accent);
+}
+.btn:active {
+  position:relative;
+  top:1px;
+}
+
+.btn-green {
+  background-color: var(--color-success) !important;
+}
+.btn-green:hover {
+  background-color: var(--color-success-accent) !important;
+}
+
+.btn-red {
+  background-color: var(--color-error) !important;
+}
+.btn-red:hover {
+  background-color: var(--color-error-accent) !important;
+}
+
+.btn-yellow {
+  background-color: var(--color-warning) !important;
+}
+.btn-yellow:hover {
+  background-color: var(--color-warning-accent) !important;
+}

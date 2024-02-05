@@ -1,0 +1,10 @@
+<h1>Editing group</h1>
+<%= turbo_frame_tag "group_#{@group.id}" do%>
+<%= render "form", group: @group %>
+<% end %>
+<br>
+
+<div>
+  <%= link_to "Show this group", [:user_manager, @group] %> |
+  <%= link_to "Back to groups", user_manager_groups_path %>
+</div>

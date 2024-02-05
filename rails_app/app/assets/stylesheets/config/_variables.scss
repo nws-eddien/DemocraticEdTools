@@ -1,0 +1,23 @@
+:root {
+
+  // Application colors
+  --color-primary: hsl(271, 47%, 41%);
+  --color-primary-accent: hsl(260, 46%, 54%);
+  --color-secondary: hsl(162, 49%, 28%);
+  --color-secondary-accent: hsl(159, 41%, 39%);
+
+  //signal-colors
+  --color-success: hsl(101, 47%, 41%);
+  --color-success-accent: hsl(101, 46%, 54%);
+  --color-warning: hsl(46, 47%, 41%);
+  --color-warning-accent: hsl(47, 46%, 54%);
+  --color-error: hsl(0, 47%, 41%);
+  --color-error-accent: hsl(0, 46%, 54%);
+
+
+  // Neutral colors
+  --color-white:      hsl(0, 0%, 100%);
+  --color-background: hsl(30, 50%, 98%);
+  --color-light:      hsl(0, 6%, 93%);
+  --color-dark:       var(--color-text-header);
+}

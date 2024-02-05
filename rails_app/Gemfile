@@ -26,7 +26,7 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-
+gem "faker"
 gem "simple_form"
 gem "pico-rails"
 gem "devise"

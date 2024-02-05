@@ -4,25 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/pin_generator.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/.dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/.dev.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/.idea/democratic_school_tools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/.idea/democratic_school_tools.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="pin_generator">
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/App.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/Frontend.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/M_C_V.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/bottom_menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/config/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/format/display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/format/flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/format/margin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/format/padding.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/container.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.turbo_stream.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/application.sass.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/application.sass.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/basic_css/basics.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/basic_css/basics.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/basic_css/buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/basic_css/buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/basic_css/structure.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/basic_css/structure.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_user.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_user.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/pin_generator.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/pin_generator.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/basic_css/basics.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/basic_css/buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/basic_css/circular_progress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/circular_progress.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/basic_css/structure.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/_navbar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/db/migrate/20230112123946_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/migrate/20230112123946_devise_create_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/db/seeds/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/seeds/development.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +43,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/rails_app/app/views/user_manager/users/_form.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="Frontend" />
+      <scope name="App" />
+      <scope name="M-C-V" />
+    </order>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -48,8 +77,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/schule/projects/tools_for_democratic_schools",
+    "last_opened_file_path": "/home/schule/projects/tools_for_democratic_schools/rails_app/app/views/user_manager",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,6 +90,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rails_app/app/controllers/user_manager" />
+      <recent name="$PROJECT_DIR$/rails_app/app/helpers/user_manager" />
+      <recent name="$PROJECT_DIR$/rails_app/app/views/user_manager" />
+      <recent name="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure" />
+      <recent name="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="rails g scaffold group" />
+    </option>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="TaskManager">
@@ -70,11 +114,26 @@
       <option name="presentableId" value="Default" />
       <updated>1707069422663</updated>
       <workItem from="1707069424060" duration="875000" />
-      <workItem from="1707070305116" duration="10094000" />
+      <workItem from="1707070305116" duration="14876000" />
+      <workItem from="1707086303312" duration="10935000" />
     </task>
+    <task id="LOCAL-00001" summary="pin_generator">
+      <option name="closed" value="true" />
+      <created>1707081552302</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707081552302</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="title changed" />
+    <MESSAGE value="pin_generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="pin_generator" />
   </component>
 </project>

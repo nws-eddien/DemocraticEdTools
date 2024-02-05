@@ -1,0 +1,2 @@
+module UserManager::GroupsHelper
+end

@@ -2,3 +2,6 @@ MediaGlobalSetting.create({ :behavior_on_exceed => 1, :penalty_factor => 4, :dai
 puts "\n== Seeding the database with fixtures =="
 system("bin/rails db:fixtures:load")
 
+100.times do |num|
+  Group.create({:name => Faker::Name.name})
+end

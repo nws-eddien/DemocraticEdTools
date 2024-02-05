@@ -1,0 +1,11 @@
+<div id="<%= dom_id group %>">
+  <%= turbo_frame_tag "group_#{group.id}" do%>
+    <p>
+      <strong>Name:</strong>
+      <%= group.name %>
+      <%= link_to :edit, edit_user_manager_group_path(group), class: "btn btn-yellow"%>
+    </p>
+
+  <% end %>
+
+</div>

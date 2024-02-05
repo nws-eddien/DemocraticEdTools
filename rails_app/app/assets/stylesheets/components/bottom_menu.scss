@@ -1,0 +1,23 @@
+.bottom-menu {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  justify-self: end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #9165d2;
+  padding: 8px;
+  z-index:13;
+}
+a.bottom-menu-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+a.bottom-menu-link:link {
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}

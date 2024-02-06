@@ -1,13 +1,10 @@
+#docker exec -it dst_rails_dev rails g scaffold_controller user_manager::group name --model-name="Group"
 class UserManager::GroupsController < ApplicationController
   before_action :set_group, only: %i[ show edit update destroy ]
 
   # GET /user_manager/groups or /user_manager/groups.json
   def index
-    page_limit = 10
-    @current_page = params[:page].to_i
-
-    @groups = Group.offset(page_limit*@current_page).limit(page_limit)
-    @next_page = @current_page + 1 if(Group.all.count > page_limit*@current_page + page_limit)
+    @groups = Group.all
   end
 
   # GET /user_manager/groups/1 or /user_manager/groups/1.json

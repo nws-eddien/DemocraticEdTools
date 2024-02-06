@@ -4,9 +4,14 @@
     Gruppen
   </div>
   <div class="card-content">
-    <div id="groups">
-    </div>
-    <%= turbo_frame_tag "load_more", src: user_manager_groups_path(format: :turbo_stream), loading: :lazy %>
+    <table id="groups">
+      <thead>
+      <td>Gruppe</td>
+      <td>Mitgliederzahl</td>
+      <td>Aktionen</td>
+      </thead>
+      <%= render @groups %>
+    </table>
   </div>
 </div>
 

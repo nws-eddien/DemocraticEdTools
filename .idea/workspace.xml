@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
+    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="restructure css">
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/Groups.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_membershiplevel.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/docker-compose.dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/config/storage.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/storage.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/.dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/.dev.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/groups_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/_navbar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_group.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_group.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.turbo_stream.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_user.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_user.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +48,7 @@
       <scope name="Frontend" />
       <scope name="App" />
       <scope name="M-C-V" />
+      <scope name="Groups" />
     </order>
   </component>
   <component name="ProjectColorInfo">{
@@ -45,23 +60,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/schule/projects/tools_for_democratic_schools/rails_app/app/views/user_manager&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/schule/projects/tools_for_democratic_schools/rails_app/app/views/user_manager",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/rails_app/app/controllers/user_manager" />
@@ -87,9 +102,7 @@
       <updated>1707069422663</updated>
       <workItem from="1707069424060" duration="875000" />
       <workItem from="1707070305116" duration="14876000" />
-      <workItem from="1707086303312" duration="10935000" />
-      <workItem from="1707155943743" duration="4397000" />
-      <workItem from="1707160392027" duration="11838000" />
+      <workItem from="1707086303312" duration="20021000" />
     </task>
     <task id="LOCAL-00001" summary="pin_generator">
       <option name="closed" value="true" />
@@ -99,62 +112,24 @@
       <option name="project" value="LOCAL" />
       <updated>1707081552302</updated>
     </task>
-    <task id="LOCAL-00002" summary="grid_layout">
+    <task id="LOCAL-00002" summary="restructure css">
       <option name="closed" value="true" />
-      <created>1707161661623</created>
+      <created>1707154315052</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1707161661623</updated>
+      <updated>1707154315052</updated>
     </task>
-    <task id="LOCAL-00003" summary="grid_layout">
-      <option name="closed" value="true" />
-      <created>1707164805698</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1707164805698</updated>
-    </task>
-    <task id="LOCAL-00004" summary="S3 File Server in Docker">
-      <option name="closed" value="true" />
-      <created>1707171148979</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1707171148979</updated>
-    </task>
-    <task id="LOCAL-00005" summary="S3 File Server in Docker">
-      <option name="closed" value="true" />
-      <created>1707171199151</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1707171199151</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/main'">
-      <option name="closed" value="true" />
-      <created>1707171271992</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1707171271992</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
-    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="title changed" />
     <MESSAGE value="pin_generator" />
-    <MESSAGE value="grid_layout" />
-    <MESSAGE value="S3 File Server in Docker" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="restructure css" />
+    <option name="LAST_COMMIT_MESSAGE" value="restructure css" />
   </component>
 </project>

@@ -1,0 +1,16 @@
+<%= turbo_frame_tag "membershiplevel#{membershiplevel.id}" do %>
+<div class="card">
+  <div class="card-title">
+    <%= membershiplevel.name.capitalize %>:
+
+  </div>
+  <div class="card-content">
+    <% membershiplevel.users.each do |user| %>
+      <%= user.name.capitalize %>
+    <% end %>
+  </div>
+  <div class="card-actions">
+    <%= link_to :edit, edit_user_manager_membershiplevel_path(membershiplevel.id) %>
+  </div>
+</div>
+<% end %>

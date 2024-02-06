@@ -1,6 +1,14 @@
-<p style="color: green"><%= notice %></p>
 
-<%= render @group %>
+  <div class="container-title">
+    <%= @group.name %>
+  </div>
+  <div class="card-content">
+    <% @group.membershiplevels.each do |membershiplevel| %>
+      <%= render "user_manager/membershiplevels/membershiplevel", {membershiplevel: membershiplevel}%>
+    <% end %>
+  </div>
+
+
 
 <div>
   <%= link_to "Edit this group", edit_user_manager_group_path(@group) %> |

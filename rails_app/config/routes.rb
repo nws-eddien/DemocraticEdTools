@@ -3,8 +3,11 @@ Rails.application.routes.draw do
   namespace :user_manager do
     resources :groups
     resources :users
+    resources :membershiplevels
     get 'users/:id/pin_generator' => 'users#pin_generator', as: :pin_generator
     patch 'users/:id/generate_pin' => 'users#generate_pin', as: :generate_pin
+    post 'membershiplevel/remove_user' => 'membershiplevels#remove_user', as: :membershiplevel_remove_user
+    post 'membershiplevel/add_user' => 'membershiplevels#add_user', as: :membershiplevel_add_user
   end
 
   namespace :media_time do

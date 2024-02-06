@@ -1,0 +1,12 @@
+<%= turbo_frame_tag "membershiplevel#{@membershiplevel.id}" do %>
+  <div class="card d-flex">
+    <% @membershiplevel.users.each do |user| %>
+      <%= button_to user.name, user_manager_membershiplevel_remove_user_path(id: @membershiplevel.id, user_id: user.id) , method: :post, class: 'btn btn-green' %>
+    <% end %>
+  </div>
+  <div class="card d-flex">
+    <% (User.all - @membershiplevel.users).each do |user| %>
+      <%= button_to user.name, user_manager_membershiplevel_add_user_path(id: @membershiplevel.id, user_id: user.id) , method: :post, class: 'btn btn-red' %>
+  <% end %>
+  </div>
+<% end %>

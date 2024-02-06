@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Groups" pattern="file[tools_for_democratic_schools]:rails_app/app/assets//*||file:rails_app/app/controllers/user_manager/groups_controller.rb||file:rails_app/app/helpers/user_manager/groups_helper.rb||file:rails_app/app/models/permissions/group.rb||file:rails_app/app/policies/group_policy.rb||file[tools_for_democratic_schools]:rails_app/app/views/user_manager/groups//*" />
+</component>

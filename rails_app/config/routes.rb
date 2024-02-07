@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     patch 'users/:id/generate_pin' => 'users#generate_pin', as: :generate_pin
     post 'membershiplevel/remove_user' => 'membershiplevels#remove_user', as: :membershiplevel_remove_user
     post 'membershiplevel/add_user' => 'membershiplevels#add_user', as: :membershiplevel_add_user
+    get 'membershiplevel/:id/multiselect_users' => 'membershiplevels#multiselect_users', as: :membershiplevel_multiselect_users
+    post 'membershiplevel/:id/set_users' => 'membershiplevels#set_users', as: :membershiplevel_set_users
   end
 
   namespace :media_time do

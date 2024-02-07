@@ -5,3 +5,7 @@ system("bin/rails db:fixtures:load")
 100.times do |num|
   Group.create({:name => Faker::Name.name})
 end
+
+100.times do |num|
+  User.create({:name => Faker::Name.name, :password => Faker::Creature.name})
+end

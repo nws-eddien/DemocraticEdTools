@@ -1,0 +1,42 @@
+.multiselect_selected_field {
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  padding: 6px 6px 6px 6px;
+  border: solid #000000 1px;
+  text-decoration: none;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.multiselect_remove_button {
+  border-radius: 28px;
+  color:white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 6px 1px 7px;
+  text-decoration: none;
+  background-color: var(--color-error);
+  display:inline-block;
+}
+.multiselect_list {
+  display:flex;
+  flex-direction: column;
+  max-height:200px;
+  overflow-y:auto
+}
+.multiselect_list_item {
+  background-color: var(--color-primary);
+  border:1px solid #000000;
+  display:block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:13px;
+  font-weight:bold;
+  padding:6px 12px;
+  text-decoration:none;
+}
+.multiselect_list_item_marked {
+  background-color: green !important;
+}

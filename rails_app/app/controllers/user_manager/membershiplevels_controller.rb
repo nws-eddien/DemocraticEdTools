@@ -1,7 +1,31 @@
 class UserManager::MembershiplevelsController < ApplicationController
-  before_action :set_membershiplevel, only: %i[ show edit update destroy ]
+  before_action :set_membershiplevel, only: %i[ show edit update destroy multiselect_users set_users]
 
+  def multiselect_users
+    puts params
+    puts "!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    @selected = @membershiplevel.users
+    if params[:selected].class == Array
+      @selected = User.where(id: params[:selected])
+    end
+    @user = User.find_by_id(params[:user_id])
+    if @user.present?
+      if @selected.include?(@user)
+        @selected = @selected.where.not(id: @user.id)
+      else
+        @selected = @selected.or(User.where(:id => @user.id))
+      end
+    end
+    respond_to do |format|
+      format.html
+      format.turbo_stream
+    end
+  end
 
+  def set_users
+    @users = User.where(id: params[:user_ids])
+    @membershiplevel.users = @users
+  end
   def add_user
     @membershiplevel = Membershiplevel.find(params[:id])
     @user = User.find(params[:user_id])

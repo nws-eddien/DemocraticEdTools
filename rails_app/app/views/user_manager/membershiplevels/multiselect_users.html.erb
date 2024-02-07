@@ -1,1 +1,17 @@
-<%= @selected.as_json %>
+<%= turbo_frame_tag "multiselect_users_for_#{@membershiplevel.id}" do %>
+  <div class="multiselect_selected_field">
+    <% @selected.each do |user| %>
+      <div class="chip">
+        <%= user.name.capitalize %>
+        <%= link_to :x, user_manager_membershiplevel_multiselect_users_path(selected: @selected.map(&:id) || [0], user_id: user.id), class: 'multiselect_remove_button' %>
+      </div>
+    <% end %>
+  </div>
+  <%= button_to :speichern, user_manager_membershiplevel_set_users_path(user_ids: @selected.map(&:id)) || [0], method: :post, class: 'btn btn-green' %>
+
+  <div class="multiselect_list">
+    <% User.all.order(name: :asc).each do |user| %>
+        <%= link_to user.name.capitalize, user_manager_membershiplevel_multiselect_users_path(selected: @selected.map(&:id), user_id: user.id), class: "multiselect_list_item #{@selected.include?(user) ? 'multiselect_list_item_marked' : ''}"%>
+    <% end %>
+  </div>
+<% end %>

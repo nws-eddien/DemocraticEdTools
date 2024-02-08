@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="membershiplevel editor">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/.dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/.dev.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/_footer.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,16 +1,17 @@
-<%= turbo_frame_tag "membershiplevel#{membershiplevel.id}" do %>
+
 <div class="card">
   <div class="card-title">
     <%= membershiplevel.name.capitalize %>:
 
   </div>
   <div class="card-content">
-    <% membershiplevel.users.each do |user| %>
-      <%= user.name.capitalize %>
+    <%= turbo_frame_tag "membershiplevel_edit_users_#{membershiplevel.id}"  do %>
+      <% membershiplevel.users.order(name: :asc).each do |user| %>
+        <%= user.name.titleize %>
+      <% end %>
     <% end %>
   </div>
   <div class="card-actions">
-    <%= link_to :edit, edit_user_manager_membershiplevel_path(membershiplevel.id) %>
+    <%= link_to :edit, user_manager_membershiplevels_edit_users_path(membershiplevel.id), data: { turbo_frame: "membershiplevel_edit_users_#{membershiplevel.id}" }%>
   </div>
 </div>
-<% end %>

@@ -3,5 +3,9 @@ puts "\n== Seeding the database with fixtures =="
 system("bin/rails db:fixtures:load")
 
 100.times do |num|
-  Group.create({:name => Faker::Name.name})
+  Group.create({:name => Faker::Name.first_name})
+end
+
+100.times do |num|
+  User.create({:name => Faker::Name.first_name, :password => Faker::Name.name})
 end

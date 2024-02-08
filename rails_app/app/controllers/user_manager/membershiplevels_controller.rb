@@ -1,17 +1,23 @@
 class UserManager::MembershiplevelsController < ApplicationController
-  before_action :set_membershiplevel, only: %i[ show edit update destroy ]
+  before_action :set_membershiplevel, only: %i[ show edit update destroy edit_users update_users show_users]
 
+  def show_users
 
-  def add_user
-    @membershiplevel = Membershiplevel.find(params[:id])
-    @user = User.find(params[:user_id])
-    @membershiplevel.users << @user
+  end
+  def edit_users
+    @users = User.all.sort_by { |a| [@membershiplevel.users.include?(a) ? 0 : 1 , a.name]} # Fetch users once
+    @multiselect_elements_value = @users.map { |u| "membershiplevel_#{@membershiplevel.id}_user_ids_#{u.id}" }.to_json
+    @multiselect_names_value = @users.map { |u| u.name.titleize }.to_json
   end
 
-  def remove_user
-    @membershiplevel = Membershiplevel.find(params[:id])
-    @user = User.find(params[:user_id])
-    @membershiplevel.users.delete(@user)
+  def update_users
+    respond_to do |format|
+      if @membershiplevel.update(membershiplevel_params)
+        format.html {  redirect_to user_manager_membershiplevels_show_users_url(@membershiplevel), notice: "Membershiplevel was successfully updated." }
+      else
+        format.html { render :edit_users, status: :unprocessable_entity }
+      end
+    end
   end
   # GET /user_manager/membershiplevels or /user_manager/membershiplevels.json
   def index
@@ -77,7 +83,6 @@ class UserManager::MembershiplevelsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def membershiplevel_params
-    params.require(:membershiplevel).permit(:name)
+    params.require(:membershiplevel).permit(:name, :user_ids => [])
   end
 end
-

@@ -1,0 +1,21 @@
+
+  <div class="container-title">
+    <%= @group.name %>
+  </div>
+  <div class="container-top-actions">
+    <%= link_to "Mitgliedschaftslevel hinzufügen", new_user_manager_membershiplevel_path, class: "btn btn-green"%>
+  </div>
+  <div class="card-content">
+    <% @group.membershiplevels.each do |membershiplevel| %>
+      <%= render "user_manager/membershiplevels/membershiplevel", {membershiplevel: membershiplevel}%>
+    <% end %>
+  </div>
+
+
+
+<div>
+  <%= link_to "Edit this group", edit_user_manager_group_path(@group) %> |
+  <%= link_to "Back to groups", user_manager_groups_path %>
+
+  <%= button_to "Destroy this group", [:user_manager, @group], method: :delete %>
+</div>

@@ -1,18 +1,4 @@
-
-  <div class="container-title">
-    <%= @group.name %>
-  </div>
-  <div class="card-content">
-    <% @group.membershiplevels.each do |membershiplevel| %>
-      <%= render "user_manager/membershiplevels/membershiplevel", {membershiplevel: membershiplevel}%>
-    <% end %>
-  </div>
-
-
-
-<div>
-  <%= link_to "Edit this group", edit_user_manager_group_path(@group) %> |
-  <%= link_to "Back to groups", user_manager_groups_path %>
-
-  <%= button_to "Destroy this group", [:user_manager, @group], method: :delete %>
+<%= link_to sanitize("&larr; Zurück zu Gruppen"), user_manager_groups_path %>
+<div class="container-title">
+  <h1><%= @group.name %></h1>
 </div>

@@ -1,0 +1,7 @@
+<div class="empty-state empty-state--only-child">
+  <p class="empty-state__text">
+    Es gibt noch keine Gruppen!
+  </p>
+
+  <%= link_to "Gruppe hinzufügen", new_user_manager_group_path, class: "btn btn-green", data: { turbo_frame: dom_id(Group.new) } %>
+</div>

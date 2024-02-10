@@ -1,19 +1,15 @@
-<%= simple_form_for [:user_manager, group] do |form| %>
-  <% if group.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
-
-      <ul>
-        <% group.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="d-flex">
-    <%= form.input :name %>
-    <%= form.button :submit%>
+<%= simple_form_for [:user_manager, group], html: {clasS: "form"} do |f| %>
+   <div class="card-content" >
+      <% if group.errors.any? %>
+        <div class="error-message">
+          <%= group.errors.full_messages.to_sentence.capitalize %>
+        </div>
+      <% end %>
+     <%= f.input :name, input_html: { autofocus: true } %>
+   </div>
+  <div class="card-actions">
+    <%= link_to "Abbrechen", user_manager_groups_path, class: "btn btn-red mr-2" %>
+    <%= f.submit class: "btn btn-green" %>
   </div>
 
 

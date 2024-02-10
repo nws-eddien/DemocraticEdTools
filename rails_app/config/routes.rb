@@ -1,14 +1,18 @@
 Rails.application.routes.draw do
 
+  #namespace :user_manager do
+  #resources :groups
+  #  resources :users
+  # resources :membershiplevels
+  # get 'users/:id/pin_generator' => 'users#pin_generator', as: :pin_generator
+  # patch 'users/:id/generate_pin' => 'users#generate_pin', as: :generate_pin
+  # get 'membershiplevels/:id/edit_users' => 'membershiplevels#edit_users', as: :membershiplevels_edit_users
+  # get 'membershiplevels/:id/show_users' => 'membershiplevels#show_users', as: :membershiplevels_show_users
+  # patch 'membershiplevels/:id/update_users' => "membershiplevels#update_users", as: :membershiplevels_update_users
+  #end
+
   namespace :user_manager do
     resources :groups
-    resources :users
-    resources :membershiplevels
-    get 'users/:id/pin_generator' => 'users#pin_generator', as: :pin_generator
-    patch 'users/:id/generate_pin' => 'users#generate_pin', as: :generate_pin
-    get 'membershiplevels/:id/edit_users' => 'membershiplevels#edit_users', as: :membershiplevels_edit_users
-    get 'membershiplevels/:id/show_users' => 'membershiplevels#show_users', as: :membershiplevels_show_users
-    patch 'membershiplevels/:id/update_users' => "membershiplevels#update_users", as: :membershiplevels_update_users
   end
 
   namespace :media_time do

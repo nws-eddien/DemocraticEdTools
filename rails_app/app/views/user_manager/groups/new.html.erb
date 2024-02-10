@@ -1,9 +1,10 @@
-<h1>New group</h1>
-
-<%= render "form", group: @group %>
-
-<br>
-
-<div>
-  <%= link_to "Back to groups", user_manager_groups_path %>
+<%= link_to sanitize("&larr; Zurück zu Gruppen"), user_manager_groups_path %>
+<div class="container-title">
+  <h1> Neue Gruppe </h1>
 </div>
+<%= turbo_frame_tag @group do %>
+  <div class="card">
+  <%= render "form", group: @group %>
+  </div>
+<% end %>
+

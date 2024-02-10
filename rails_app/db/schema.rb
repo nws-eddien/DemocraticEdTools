@@ -80,7 +80,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_05_205634) do
 
   create_table "media_penalties", force: :cascade do |t|
     t.bigint "media_time_id"
-    t.date "activated_at", default: "2024-02-07"
+    t.date "activated_at", default: "2024-02-09"
     t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -133,6 +133,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_05_205634) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["membershiplevel_id"], name: "index_memberships_on_membershiplevel_id"
+    t.index ["user_id", "membershiplevel_id"], name: "index_memberships_on_user_id_and_membershiplevel_id", unique: true
     t.index ["user_id"], name: "index_memberships_on_user_id"
   end
 

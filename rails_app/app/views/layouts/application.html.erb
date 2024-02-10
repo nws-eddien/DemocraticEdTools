@@ -13,6 +13,9 @@
 <body>
   <div class="grid_layout">
     <%= render "layouts/navbar" %>
+    <div id="flash" class="flash">
+      <%= render "layouts/flash" %>
+    </div>
     <div class="grid_main">
       <div class="grid_content content">
         <%= yield %>

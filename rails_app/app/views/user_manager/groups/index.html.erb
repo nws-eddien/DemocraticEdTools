@@ -1,19 +1,15 @@
-<p style="color: green"><%= notice %></p>
-<div class="card">
-  <div class="card-title">
-    Gruppen
-  </div>
-  <div class="card-content">
-    <table id="groups">
-      <thead>
-      <td>Gruppe</td>
-      <td>Mitgliederzahl</td>
-      <td>Aktionen</td>
-      </thead>
-      <%= render @groups %>
-    </table>
-  </div>
+<%= turbo_stream_from "groups" %>
+<div class="container-title">
+  <h1>Gruppen</h1>
+  <%= link_to "Neue Gruppe",
+              new_user_manager_group_path,
+              class: "btn btn-green",
+              data: { turbo_frame: dom_id(Group.new) }%>
 </div>
-
-
-<%= link_to "New group", new_user_manager_group_path %>
+<div class="container-content">
+  <%= turbo_frame_tag Group.new %>
+  <%= turbo_frame_tag "groups" do %>
+    <%= render "user_manager/groups/empty_state" %>
+    <%= render @groups %>
+  <% end %>
+</div>

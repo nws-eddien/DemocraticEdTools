@@ -1,0 +1,9 @@
+<%= link_to sanitize("&larr; Zurück zu Gruppe"), user_manager_group_path(@group) %>
+<div class="container-title">
+  <h1>Neues Mitgliedschaftslevel</h1>
+</div>
+<%= turbo_frame_tag @membershiplevel do %>
+  <div class="card">
+    <%= render "form", group: @group, membershiplevel: @membershiplevel %>
+  </div>
+<% end %>

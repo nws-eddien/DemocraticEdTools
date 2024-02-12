@@ -4,58 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="Multiselect-Membershiplevels">
-      <change afterPath="$PROJECT_DIR$/.idea/scopes/UserManager.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/config/animations.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager_old/groups_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_empty_state.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/create.turbo_stream.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/destroy.turbo_stream.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/update.turbo_stream.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/groups/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/groups/_group.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/groups/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/groups/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/groups/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/groups/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/membershiplevels/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/membershiplevels/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/membershiplevels/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" afterDir="false" />
+    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="Groups rewritten">
+      <change afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/membershiplevels_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_membershiplevel.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/create.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scopes/Groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scopes/Groups.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/groups_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/membershiplevels_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager_old/membershiplevels_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager_old/users_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/javascript/controllers/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/javascript/controllers/application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/models/permissions/group.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/permissions/group.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/_footer.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/models/permissions/membershiplevel.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/permissions/membershiplevel.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_group.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_group.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_group.json.jbuilder" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.json.jbuilder" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/show.json.jbuilder" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_edit_users_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/membershiplevels/_edit_users_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/empty_state.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_membershiplevel.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/membershiplevels/_membershiplevel.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/flash.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/edit_users.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/membershiplevels/edit_users.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/show_users.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/membershiplevels/show_users.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/users/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_user.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/users/_user.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/users/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/users/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/users/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/pin_generator.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/users/pin_generator.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/users/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/db/migrate/20231022120053_create_memberships.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/migrate/20231022120053_create_memberships.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,8 +76,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/schule/projects/tools_for_democratic_schools/rails_app/app/views/user_manager",
+    "git-widget-placeholder": "rewriting__user__manager",
+    "last_opened_file_path": "/home/schule/projects/tools_for_democratic_schools/rails_app/app/controllers/user_manager",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -126,6 +90,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rails_app/app/controllers/user_manager" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure" />
       <recent name="$PROJECT_DIR$/rails_app/app/controllers/user_manager" />
@@ -150,7 +117,8 @@
       <updated>1707069422663</updated>
       <workItem from="1707069424060" duration="875000" />
       <workItem from="1707070305116" duration="14876000" />
-      <workItem from="1707086303312" duration="76398000" />
+      <workItem from="1707086303312" duration="76569000" />
+      <workItem from="1707694034126" duration="8601000" />
     </task>
     <task id="LOCAL-00001" summary="pin_generator">
       <option name="closed" value="true" />
@@ -184,7 +152,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707355519970</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Groups rewritten">
+      <option name="closed" value="true" />
+      <created>1707530606855</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707530606855</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Groups rewritten">
+      <option name="closed" value="true" />
+      <created>1707530618976</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707530618976</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +180,7 @@
     <MESSAGE value="restructure css" />
     <MESSAGE value="membershiplevel editor" />
     <MESSAGE value="Multiselect-Membershiplevels" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multiselect-Membershiplevels" />
+    <MESSAGE value="Groups rewritten" />
+    <option name="LAST_COMMIT_MESSAGE" value="Groups rewritten" />
   </component>
 </project>

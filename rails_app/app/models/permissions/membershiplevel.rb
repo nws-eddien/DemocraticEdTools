@@ -10,4 +10,10 @@ class Membershiplevel < ApplicationRecord
     def is_default
         self.group.default_membershiplevel_id == self.id
     end
+
+    def previous_membershiplevel
+        group.membershiplevels.ordered.where("name < ?", name).last
+    end
+
+    scope :ordered, -> { order(name: :asc) }
 end

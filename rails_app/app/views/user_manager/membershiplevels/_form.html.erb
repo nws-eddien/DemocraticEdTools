@@ -1,0 +1,7 @@
+
+<%= simple_form_for [:user_manager, group, membershiplevel] do |f| %>
+  <%= form_error_notification(membershiplevel) %>
+  <%= f.input :name, html5: true, input_html: { autofocus: true } %>
+  <%= link_to "Abbrechen", user_manager_group_path(group), class: "btn btn-red" %>
+  <%= f.submit class: "btn btn-green" %>
+<% end %>

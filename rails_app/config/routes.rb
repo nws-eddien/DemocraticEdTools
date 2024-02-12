@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   #end
 
   namespace :user_manager do
-    resources :groups
+    resources :groups do
+      resources :membershiplevels, except: [:index, :show]
+    end
   end
 
   namespace :media_time do

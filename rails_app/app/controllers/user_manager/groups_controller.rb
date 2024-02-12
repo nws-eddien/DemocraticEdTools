@@ -6,6 +6,7 @@ class UserManager::GroupsController < ApplicationController
   end
 
   def show
+    @membershiplevels = @group.membershiplevels.ordered
   end
 
   def new

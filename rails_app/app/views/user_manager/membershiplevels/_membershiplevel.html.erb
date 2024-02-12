@@ -1,0 +1,16 @@
+<%= turbo_frame_tag membershiplevel do %>
+  <div class="card">
+    <div class="card-title">
+      <%= membershiplevel.name.titleize %>
+    </div>
+    <div class="card-content">
+      <% membershiplevel.users.each do |user| %>
+        <%= user.name %>
+      <% end %>
+    </div>
+      <div class="card-actions">
+      <%= button_to "Löschen", [:user_manager, group, membershiplevel], method: :delete, class: "btn btn-red mr-2"%>
+      <%= link_to "Bearbeiten", [:edit, :user_manager, group, membershiplevel], class: "btn btn-yellow" %>
+    </div>
+  </div>
+<% end %>

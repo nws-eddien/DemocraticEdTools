@@ -2,5 +2,6 @@
 <div class="container-title">
   <h1>Mitgliedschaftslevel bearbeiten</h1>
 </div>
-
-<%= render "form", group: @group, membershiplevel: @membershiplevel %>
+<%= turbo_frame_tag @membershiplevel do %>
+  <%= render "form", group: @group, membershiplevel: @membershiplevel %>
+<% end %>

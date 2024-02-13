@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="Groups rewritten">
-      <change afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/membershiplevels_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_membershiplevel.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/create.turbo_stream.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scopes/Groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scopes/Groups.xml" afterDir="false" />
+    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="rewriting membershiplevels">
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/destroy.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/update.turbo_stream.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/groups_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/models/permissions/group.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/permissions/group.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/models/permissions/membershiplevel.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/permissions/membershiplevel.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/membershiplevels_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/membershiplevels_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_membershiplevel.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_membershiplevel.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/create.turbo_stream.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/create.turbo_stream.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/edit.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +111,7 @@
       <workItem from="1707069424060" duration="875000" />
       <workItem from="1707070305116" duration="14876000" />
       <workItem from="1707086303312" duration="76569000" />
-      <workItem from="1707694034126" duration="8601000" />
+      <workItem from="1707694034126" duration="10739000" />
     </task>
     <task id="LOCAL-00001" summary="pin_generator">
       <option name="closed" value="true" />
@@ -168,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707530618976</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="rewriting membershiplevels">
+      <option name="closed" value="true" />
+      <created>1707702779155</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707702779155</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +181,9 @@
     <MESSAGE value="restructure css" />
     <MESSAGE value="membershiplevel editor" />
     <MESSAGE value="Multiselect-Membershiplevels" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/rewriting_user_manager' into rewriting_user_manager" />
     <MESSAGE value="Groups rewritten" />
-    <option name="LAST_COMMIT_MESSAGE" value="Groups rewritten" />
+    <MESSAGE value="rewriting membershiplevels" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewriting membershiplevels" />
   </component>
 </project>

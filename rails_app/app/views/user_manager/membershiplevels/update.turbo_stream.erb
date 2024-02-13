@@ -1,4 +1,4 @@
-<%= turbo_stream.update Membershiplevel.new, ""%>
+<%= turbo_stream.remove @membershiplevel%>
 
 <% if previous_membershiplevel = @membershiplevel.previous_membershiplevel %>
   <%= turbo_stream.after previous_membershiplevel do  %>

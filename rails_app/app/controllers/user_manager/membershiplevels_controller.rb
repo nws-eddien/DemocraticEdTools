@@ -34,7 +34,10 @@ class UserManager::MembershiplevelsController < ApplicationController
 
   def destroy
       @membershiplevel.destroy
-      redirect_to user_manager_group_path(@group), notice: "Mitgliedschaftslevel gelöscht"
+      respond_to do |format|
+        format.html { redirect_to user_manager_group_path(@group), notice: "Mitgliedschaftslevel gelöscht" }
+        format.turbo_stream { flash.now[:notice] = "Mitgliedschaftslevel gelöscht" }
+      end
   end
 
   private

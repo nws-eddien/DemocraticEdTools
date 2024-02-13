@@ -12,6 +12,11 @@
   margin-top: -4px;
   margin-left: -4px;
 }
+.card-big-title {
+  font-size: large;
+  font-weight: bold;
+  padding: 8px 0 0 8px;
+}
 .card-content {
   padding: 8px;
   display: block;
@@ -20,4 +25,8 @@
 .card-actions {
   display: flex;
   justify-content: end;
+}
+
+.card--no-transparency {
+  background-color: rgb(255, 255, 255) !important;
 }

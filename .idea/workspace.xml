@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="Custom Turbo Confirm">
-      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/error-message.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" afterDir="false" />
+    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="Added Font Awesome">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/application.sass.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/application.sass.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_group.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_group.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +107,7 @@
       <workItem from="1707069424060" duration="875000" />
       <workItem from="1707070305116" duration="14876000" />
       <workItem from="1707086303312" duration="76569000" />
-      <workItem from="1707694034126" duration="17548000" />
+      <workItem from="1707694034126" duration="18503000" />
     </task>
     <task id="LOCAL-00001" summary="pin_generator">
       <option name="closed" value="true" />
@@ -188,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707866340897</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added Font Awesome">
+      <option name="closed" value="true" />
+      <created>1707870720159</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707870720159</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +205,7 @@
     <MESSAGE value="Groups rewritten" />
     <MESSAGE value="rewriting membershiplevels" />
     <MESSAGE value="Custom Turbo Confirm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Custom Turbo Confirm" />
+    <MESSAGE value="Added Font Awesome" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Font Awesome" />
   </component>
 </project>

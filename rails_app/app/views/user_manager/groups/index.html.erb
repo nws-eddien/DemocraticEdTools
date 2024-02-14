@@ -1,7 +1,7 @@
 <%= turbo_stream_from "groups" %>
 <div class="container-title">
   <h1>Gruppen</h1>
-  <%= link_to "Neue Gruppe",
+  <%= link_to icon("fa-solid", "plus", "Gruppe hinzufügen", class: "fa-1x"),
               new_user_manager_group_path,
               class: "btn btn-green",
               data: { turbo_frame: dom_id(Group.new) }%>

@@ -66,7 +66,10 @@ class User < ApplicationRecord
   end
 
   def permissions
-    self.all_roles.collect { |role| role.permissions }.flatten.uniq
+    Rails.cache.fetch("user_#{self.id}_permissions", :expires_in => 5.minutes) do
+      puts "renewing cache"
+      all_roles.collect { |role| role.permissions }.flatten.uniq
+    end
   end
 
   def with_main_attributes

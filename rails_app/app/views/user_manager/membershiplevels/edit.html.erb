@@ -3,5 +3,7 @@
   <h1>Mitgliedschaftslevel bearbeiten</h1>
 </div>
 <%= turbo_frame_tag @membershiplevel do %>
-  <%= render "form", group: @group, membershiplevel: @membershiplevel %>
+  <div class="card">
+    <%= render "form", group: @group, membershiplevel: @membershiplevel %>
+  </div>
 <% end %>

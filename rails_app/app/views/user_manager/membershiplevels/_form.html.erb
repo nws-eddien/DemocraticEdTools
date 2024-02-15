@@ -2,6 +2,16 @@
 <%= simple_form_for [:user_manager, group, membershiplevel] do |f| %>
   <%= form_error_notification(membershiplevel) %>
   <%= f.input :name, html5: true, input_html: { autofocus: true } %>
+  <%= render "multiselect_users", {form: f, users: @users,
+                                   membershiplevel: @membershiplevel,
+                                   multiselect_elements_value: @multiselect_users_elements_value,
+                                   multiselect_names_value: @multiselect_users_names_value}
+  %>
+  <%= render "multiselect_roles", {form: f, roles: @roles,
+                                   membershiplevel: @membershiplevel,
+                                   multiselect_elements_value: @multiselect_roles_elements_value,
+                                   multiselect_names_value: @multiselect_roles_names_value}
+  %>
   <%= link_to "Abbrechen", user_manager_group_path(group), class: "btn btn-red" %>
   <%= f.submit class: "btn btn-green" %>
 <% end %>

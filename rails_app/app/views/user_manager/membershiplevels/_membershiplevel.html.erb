@@ -4,8 +4,13 @@
       <%= membershiplevel.name.titleize %>
     </div>
     <div class="card-content">
-      <% membershiplevel.users.each do |user| %>
-        <%= user.name %>
+      <% membershiplevel.users.order(name: :asc).each do |user| %>
+        <%= user.name.titleize %><%= "," if user != membershiplevel.users.order(name: :asc).last %>
+      <% end %>
+    </div>
+    <div class="card-content">
+      <% membershiplevel.roles.order(name: :asc).each do |role| %>
+        <%= role.name.titleize %><%= "," if role != membershiplevel.roles.order(name: :asc).last %>
       <% end %>
     </div>
       <div class="card-actions">

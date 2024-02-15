@@ -13,7 +13,9 @@ Rails.application.routes.draw do
 
   namespace :user_manager do
     resources :groups do
-      resources :membershiplevels, except: [:index, :show]
+      resources :membershiplevels, except: [:index, :show] do
+        resources :users, except: [:create, :new, :edit, :update]
+      end
     end
   end
 

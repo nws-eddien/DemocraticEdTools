@@ -9,6 +9,5 @@ class App < ApplicationRecord
         when "MediaTime"
             ["createMediaBan","approveMediaBan"]
         end
-
     end
 end

@@ -12,6 +12,8 @@
                                    multiselect_elements_value: @multiselect_roles_elements_value,
                                    multiselect_names_value: @multiselect_roles_names_value}
   %>
-  <%= link_to "Abbrechen", user_manager_group_path(group), class: "btn btn-red" %>
-  <%= f.submit class: "btn btn-green" %>
+  <div class="card-actions">
+    <%= link_to "Abbrechen", user_manager_group_path(group), class: "btn btn-red" %>
+    <%= f.submit class: "btn btn-green" %>
+  </div>
 <% end %>

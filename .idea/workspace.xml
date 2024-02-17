@@ -5,19 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="Added Font Awesome">
-      <change afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_multiselect_roles.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_multiselect_users.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/.dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/.dev.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/multiselect.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/multiselect.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/form.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/membershiplevels_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/membershiplevels_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/javascript/controllers/multiselect_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/javascript/controllers/multiselect_controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/models/app.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/app.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/models/permissions/membershiplevel.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/permissions/membershiplevel.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/models/permissions/role.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/permissions/role.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/group_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/group_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/media_time_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/media_time_policy.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_membershiplevel.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_membershiplevel.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_multiselect_roles.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_multiselect_roles.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_multiselect_users.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_multiselect_users.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/config/initializers/simple_form.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/initializers/simple_form.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/roles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/roles.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +81,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "rewriting__user__manager",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/schule/projects/tools_for_democratic_schools/rails_app/app/views/user_manager/membershiplevels",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -93,11 +100,11 @@
       <recent name="$PROJECT_DIR$/rails_app/app/controllers/user_manager" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rails_app/app/models/permissions" />
       <recent name="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure" />
       <recent name="$PROJECT_DIR$/rails_app/app/controllers/user_manager" />
       <recent name="$PROJECT_DIR$/rails_app/app/helpers/user_manager" />
       <recent name="$PROJECT_DIR$/rails_app/app/views/user_manager" />
-      <recent name="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components" />
     </key>
   </component>
   <component name="RunAnythingCache">

@@ -28,15 +28,19 @@ export default class extends Controller {
         this.closeMenuEventListener = document.addEventListener("mouseup", function (event) {
             var obj = self.element
             var obj2 = document.getElementById(self.targetidValue);
-            if (!obj.contains(event.target)) {
+            if (!obj.contains(event.target) && !obj2.contains(event.target)) {
                 obj.style.display = "none"
             }
             if (obj2.contains(event.target)) {
-                obj.style.display = "flex"
+                if (window.getComputedStyle(obj).display === "none") {
+                    obj.style.display = "flex"
+                } else {
+                    obj.style.display = "none"
+                }
             }
         })
     }
     disconnect() {
-        document.removeEventListener(this.closeMenuEventListener)
+        document.removeEventListener('beforeunload', this.closeMenuEventListener)
     }
 }

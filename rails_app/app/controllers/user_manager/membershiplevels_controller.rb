@@ -2,22 +2,20 @@ class UserManager::MembershiplevelsController < ApplicationController
   before_action :set_group
   before_action :set_membershiplevel, only: [:edit, :update, :destroy]
   before_action :set_new_membershiplevel, only: :new
-  before_action :set_multiselect_data, only: [:edit, :new]
+  before_action :build_membershiplevel_from_params, only: [:create]
+  before_action :set_multiselect_data, only: [:edit, :new, :create, :update]
 
   def new
   end
 
   def create
-    @roles = Role.all
-    @users= User.all
-    @membershiplevel = @group.membershiplevels.build(membershiplevel_params)
     if @membershiplevel.save
       respond_to do |format|
         format.html { redirect_to user_manager_group_path(@group), notice: "Mitgliedschaftslevel erstellt" }
         format.turbo_stream { flash.now[:notice] = "Mitgliedschaftslevel erstellt" }
       end
     else
-      redirect_to new_user_manager_group_membershiplevel_path(@group), status: :unprocessable_entity
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -25,8 +23,6 @@ class UserManager::MembershiplevelsController < ApplicationController
   end
 
   def update
-    @roles = Role.all
-    @users= User.all
     if @membershiplevel.update(membershiplevel_params)
       respond_to do |format|
         format.html { redirect_to user_manager_group_path(@group), notice: "Mitgliedschaftslevel geändert" }
@@ -49,6 +45,10 @@ class UserManager::MembershiplevelsController < ApplicationController
 
   def set_new_membershiplevel
     @membershiplevel = @group.membershiplevels.build
+  end
+
+  def build_membershiplevel_from_params
+    @membershiplevel = @group.membershiplevels.build(membershiplevel_params)
   end
   def set_multiselect_data
     @users = User.all.sort_by { |a| [@membershiplevel.users.include?(a) ? 0 : 1 , a.name]} # Fetch users once

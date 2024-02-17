@@ -10,18 +10,29 @@ class GroupPolicy < ApplicationPolicy
       @user.is_allowed_to?("indexGroups")
     end
 
-    def create?
-      @user.is_allowed_to?("createGroups")
-    end
+  def create?
+    @user.is_allowed_to?("createGroup")
+  end
+
+  def new?
+    @user.is_allowed_to?("createGroup")
+  end
 
     def show?
-      @user.is_allowed_to?("createGroups")
+      @user.is_allowed_to?("createGroup")
     end
 
-    def update?
-      @user.is_allowed_to?("createGroups")
-    end
+  def update?
+    @user.is_allowed_to?("createGroup")
+  end
 
+  def edit?
+    @user.is_allowed_to?("createGroup")
+  end
+
+    def destroy?
+      @user.is_allowed_to?("deleteGroup")
+    end
   class Scope
       def initialize(user, scope)
         @user = user

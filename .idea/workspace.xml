@@ -4,26 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="Added Font Awesome">
-      <change beforePath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" afterDir="false" />
+    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="permissions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/.dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/.dev.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/multiselect.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/multiselect.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/groups_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/membershiplevels_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/membershiplevels_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/javascript/controllers/multiselect_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/javascript/controllers/multiselect_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/models/app.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/app.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/models/permissions/membershiplevel.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/permissions/membershiplevel.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/models/permissions/role.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/permissions/role.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/policies/group_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/group_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/media_time_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/media_time_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_multiselect_roles.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_multiselect_roles.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_multiselect_users.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_multiselect_users.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/config/initializers/simple_form.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/initializers/simple_form.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/membershiplevel_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/membershiplevel_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_group.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_group.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_membershiplevel.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_membershiplevel.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/permissions.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/permissions.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/roles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/roles.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +205,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707950682285</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fixed multiselects">
+      <option name="closed" value="true" />
+      <created>1708195454525</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708195454525</updated>
+    </task>
+    <task id="LOCAL-00013" summary="permissions">
+      <option name="closed" value="true" />
+      <created>1708195479660</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708195479660</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +238,8 @@
     <MESSAGE value="rewriting membershiplevels" />
     <MESSAGE value="Custom Turbo Confirm" />
     <MESSAGE value="Added Font Awesome" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Font Awesome" />
+    <MESSAGE value="fixed multiselects" />
+    <MESSAGE value="permissions" />
+    <option name="LAST_COMMIT_MESSAGE" value="permissions" />
   </component>
 </project>

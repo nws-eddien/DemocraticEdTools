@@ -1,10 +1,12 @@
 <%= link_to sanitize("&larr; Zurück zu Gruppen"), user_manager_groups_path %>
 <div class="container-title">
   <h1><%= @group.name %></h1>
-  <%= link_to "Neues Mitgliedschaftslevel",
-              new_user_manager_group_membershiplevel_path(@group),
-              data: { turbo_frame: dom_id(Membershiplevel.new)},
-              class: "btn btn-green" %>
+  <% if policy(Membershiplevel.new).create? %>
+    <%= link_to "Neues Mitgliedschaftslevel",
+                new_user_manager_group_membershiplevel_path(@group),
+                data: { turbo_frame: dom_id(Membershiplevel.new)},
+                class: "btn btn-green" %>
+  <% end %>
 </div>
 <div class="container-content">
 

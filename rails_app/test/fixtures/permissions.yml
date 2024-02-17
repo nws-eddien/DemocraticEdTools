@@ -26,3 +26,34 @@ MediaTimeApproveMediaBan:
   app: MediaTime
   name: approveMediaBan
 
+UserManagerCreateGroup:
+  app: UserManager
+  name: createGroup
+
+UserManagerDeleteGroup:
+  app: UserManager
+  name: deleteGroup
+
+UserManagerEditGroup:
+  app: UserManager
+  name: editGroup
+
+UserManagerShowGroup:
+  app: UserManager
+  name: showGroup
+
+UserManagerIndexGroups:
+  app: UserManager
+  name: indexGroups
+
+UserManagerCreateMembershiplevel:
+  app: UserManager
+  name: createMembershiplevel
+
+UserManagerDeleteMembershiplevel:
+  app: UserManager
+  name: deleteMembershiplevel
+
+UserManagerUpdateMembershiplevel:
+  app: UserManager
+  name: updateMembershiplevel

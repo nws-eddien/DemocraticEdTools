@@ -4,11 +4,15 @@ class UserManager::MembershiplevelsController < ApplicationController
   before_action :set_new_membershiplevel, only: :new
   before_action :build_membershiplevel_from_params, only: [:create]
   before_action :set_multiselect_data, only: [:edit, :new, :create, :update]
+  include Pundit::Authorization
+  after_action :verify_authorized
 
   def new
+    authorize @membershiplevel
   end
 
   def create
+    authorize @membershiplevel
     if @membershiplevel.save
       respond_to do |format|
         format.html { redirect_to user_manager_group_path(@group), notice: "Mitgliedschaftslevel erstellt" }
@@ -20,9 +24,11 @@ class UserManager::MembershiplevelsController < ApplicationController
   end
 
   def edit
+    authorize @membershiplevel
   end
 
   def update
+    authorize @membershiplevel
     if @membershiplevel.update(membershiplevel_params)
       respond_to do |format|
         format.html { redirect_to user_manager_group_path(@group), notice: "Mitgliedschaftslevel geändert" }
@@ -34,6 +40,7 @@ class UserManager::MembershiplevelsController < ApplicationController
   end
 
   def destroy
+    authorize @membershiplevel
       @membershiplevel.destroy
       respond_to do |format|
         format.html { redirect_to user_manager_group_path(@group), notice: "Mitgliedschaftslevel gelöscht" }

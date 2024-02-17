@@ -10,6 +10,11 @@ MediaTimeModerator:
   app: MediaTime
 GroupsAdmin:
   name: groups_admin
-  permissions: [UserManagerCreateUser, UserManagerCreateUser]
+  permissions: [UserManagerCreateGroup, UserManagerEditGroup, UserManagerIndexGroups, UserManagerDeleteGroup, UserManagerShowGroup]
+  membershiplevels: [super_admin]
+  app: UserManager
+MembershiplevelsAdmin:
+  name: membershiplevels_admin
+  permissions: [UserManagerCreateMembershiplevel, UserManagerUpdateMembershiplevel, UserManagerDeleteMembershiplevel]
   membershiplevels: [super_admin]
   app: UserManager

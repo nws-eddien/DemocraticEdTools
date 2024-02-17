@@ -6,24 +6,22 @@ class MembershiplevelPolicy < ApplicationPolicy
     @record = record
   end
 
-  def index?
-    @user.permissions.include? ("indexGroups")
-  end
-
   def create?
-    @user.permissions.include? ("createGroups")
+    @user.is_allowed_to? ("createMembershiplevel")
   end
 
-  def show?
-    @user.permissions.include? ("createGroups")
+  def new?
+    @user.is_allowed_to? ("createMembershiplevel")
   end
-
   def update?
-    @user.permissions.include? ("createGroups")
+    @user.is_allowed_to? ("updateMembershiplevel")
   end
 
-  def update_users?
-    @user.permissions.include? ("createGroups")
+  def edit?
+    @user.is_allowed_to? ("updateMembershiplevel")
+  end
+  def destroy?
+    @user.is_allowed_to? ("deleteMembershiplevel")
   end
 
 class Scope

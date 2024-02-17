@@ -14,8 +14,12 @@
       <% end %>
     </div>
       <div class="card-actions">
-      <%= button_to "Löschen", [:user_manager, group, membershiplevel], form: { data: { turbo_confirm: "Möchtest du das Mitgliedschaftslevel #{membershiplevel.name.titleize} wirklich löschen?" } }, method: :delete, class: "btn btn-red mr-2"%>
-      <%= link_to "Bearbeiten", [:edit, :user_manager, group, membershiplevel], class: "btn btn-yellow" %>
+        <% if policy(membershiplevel).destroy? %>
+          <%= button_to "Löschen", [:user_manager, group, membershiplevel], form: { data: { turbo_confirm: "Möchtest du das Mitgliedschaftslevel #{membershiplevel.name.titleize} wirklich löschen?" } }, method: :delete, class: "btn btn-red mr-2"%>
+        <% end %>
+        <% if policy(membershiplevel).update? %>
+          <%= link_to "Bearbeiten", [:edit, :user_manager, group, membershiplevel], class: "btn btn-yellow" %>
+        <% end %>
     </div>
   </div>
 <% end %>

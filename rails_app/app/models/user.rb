@@ -82,4 +82,6 @@ class User < ApplicationRecord
     false
   end
 
+  scope :ordered, -> {order(name: :asc)}
+
 end

@@ -9,7 +9,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.1]
       t.string :pin
       t.integer :pin_length,  default: 5
       t.boolean :easy_pin, default: false
-      t.string :encrypted_password, null: false, default: ""
+      t.string :encrypted_password, default: nil
 
       ## Recoverable
       t.string   :reset_password_token

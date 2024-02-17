@@ -1,0 +1,14 @@
+<%= link_to sanitize("&larr; Zurück zu Benutzer:innen"), user_manager_users_path %>
+<div class="container-title d-flex mt-4">
+  <% if current_user.avatar.attached? %>
+    <%= image_tag current_user.avatar, :size => 50%>
+  <% else %>
+    <%= link_to "Avatar hinzufügen", "/bla",class: "avatar-placeholder" %>
+  <% end %>
+  <h1 class="ml-4">
+    <%= @user.name.titleize %>
+  </h1>
+</div>
+<div class="container-content">
+
+</div>

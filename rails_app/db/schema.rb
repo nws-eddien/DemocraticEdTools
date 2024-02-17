@@ -179,7 +179,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_17_143911) do
     t.string "pin"
     t.integer "pin_length", default: 5
     t.boolean "easy_pin", default: false
-    t.string "encrypted_password", default: "", null: false
+    t.string "encrypted_password"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

@@ -1,0 +1,12 @@
+<%= link_to sanitize("&larr; Zurück zu Gruppen"), user_manager_users_path %>
+<div class="container-title">
+  <h1> Benutzer:in bearbeiten </h1>
+</div>
+<div class="container-content">
+  <%= turbo_frame_tag @user do %>
+    <div class="card">
+      <%= render "form", user: @user %>
+    </div>
+  <% end %>
+</div>
+

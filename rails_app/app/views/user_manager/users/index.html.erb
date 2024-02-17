@@ -1,0 +1,17 @@
+<%= turbo_stream_from "users" %>
+<div class="container-title">
+  <h1>Benutzer:innen</h1>
+  <% if policy(User.new).create? %>
+    <%= link_to icon("fa-solid", "plus", "Benutzer:in hinzufügen", class: "fa-1x"),
+                new_user_manager_user_path,
+                class: "btn btn-green",
+                data: { turbo_frame: dom_id(User.new) }%>
+  <% end %>
+</div>
+<div class="container-content">
+  <%= turbo_frame_tag User.new %>
+  <%= turbo_frame_tag "users" do %>
+    <%= render "user_manager/users/empty_state" %>
+    <%= render @users %>
+  <% end %>
+</div>

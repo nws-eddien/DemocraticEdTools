@@ -5,17 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="permissions">
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/avatar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_empty_state.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/_user.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/create.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/destroy.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/update.turbo_stream.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scopes/UserManager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scopes/UserManager.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/groups_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/membershiplevels_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/membershiplevels_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/group_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/group_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/membershiplevel_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/membershiplevel_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_group.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/_group.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/groups/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_membershiplevel.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels/_membershiplevel.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/permissions.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/permissions.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/roles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/roles.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/format/margin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/format/margin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/db/migrate/20230112123946_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/migrate/20230112123946_devise_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +58,11 @@
   </component>
   <component name="NamedScopeManager">
     <order>
+      <scope name="UserManager" />
       <scope name="Frontend" />
       <scope name="App" />
       <scope name="M-C-V" />
       <scope name="Groups" />
-      <scope name="UserManager" />
     </order>
   </component>
   <component name="ProjectColorInfo">{
@@ -73,7 +80,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/schule/projects/tools_for_democratic_schools/rails_app/app/views/user_manager/membershiplevels",
+    "last_opened_file_path": "/home/eddien/projects/tools_for_democratic_schools/rails_app/app/views/user_manager/users",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,10 +90,16 @@
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "project.scopes",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rails_app/app/views/user_manager/users" />
       <recent name="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels" />
       <recent name="$PROJECT_DIR$/rails_app/app/controllers/user_manager" />
     </key>
@@ -221,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708195479660</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="permissions">
+      <option name="closed" value="true" />
+      <created>1708199729017</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708199729017</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

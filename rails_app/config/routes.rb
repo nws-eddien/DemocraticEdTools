@@ -13,9 +13,11 @@ Rails.application.routes.draw do
 
   namespace :user_manager do
     resources :groups do
-      resources :membershiplevels, except: [:index, :show] do
-        resources :users, except: [:create, :new, :edit, :update]
-      end
+      resources :membershiplevels, except: [:index, :show]
+    end
+    resources :users do
+      get 'pin_generator' => 'users#pin_generator', as: :pin_generator
+      patch 'generate_pin' => 'users#generate_pin', as: :generate_pin
     end
   end
 

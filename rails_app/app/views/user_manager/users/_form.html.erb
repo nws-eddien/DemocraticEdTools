@@ -1,0 +1,15 @@
+<%= simple_form_for [:user_manager, user], html: {class: "form"} do |f| %>
+   <div class="card-content" >
+     <%= form_error_notification(user) %>
+       <%= f.input :name, input_html: { autofocus: true } %>
+     <%= f.input :avatar %>
+     <%= f.input :password %>
+       <%= f.input :password_confirmation %>
+   </div>
+  <div class="card-actions">
+    <%= link_to icon("fa-solid", "xmark"), user_manager_users_path, class: "btn btn-red mr-2" %>
+    <%= button_tag icon("fa-solid", "floppy-disk"), type: "submit", class: "btn btn-green"  %>
+  </div>
+
+
+<% end %>

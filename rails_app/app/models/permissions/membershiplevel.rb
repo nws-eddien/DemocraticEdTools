@@ -8,6 +8,10 @@ class Membershiplevel < ApplicationRecord
     validates_uniqueness_of :name, conditions: -> (membershiplevel) { where(group_id: membershiplevel.group_id ) }
 
 
+    def permissions
+        roles.collect {|role| role.permissions}
+    end
+
     def is_default
         self.group.default_membershiplevel_id == self.id
     end

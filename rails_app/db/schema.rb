@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_05_205634) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_17_143911) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -80,7 +80,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_05_205634) do
 
   create_table "media_penalties", force: :cascade do |t|
     t.bigint "media_time_id"
-    t.date "activated_at", default: "2024-02-09"
+    t.date "activated_at", default: "2024-02-17"
     t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -135,6 +135,25 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_05_205634) do
     t.index ["membershiplevel_id"], name: "index_memberships_on_membershiplevel_id"
     t.index ["user_id", "membershiplevel_id"], name: "index_memberships_on_user_id_and_membershiplevel_id", unique: true
     t.index ["user_id"], name: "index_memberships_on_user_id"
+  end
+
+  create_table "permissions", force: :cascade do |t|
+    t.bigint "app_id"
+    t.string "name"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["app_id"], name: "index_permissions_on_app_id"
+    t.index ["name"], name: "index_permissions_on_name", unique: true
+  end
+
+  create_table "role_permissions", force: :cascade do |t|
+    t.bigint "role_id"
+    t.bigint "permission_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["permission_id"], name: "index_role_permissions_on_permission_id"
+    t.index ["role_id"], name: "index_role_permissions_on_role_id"
   end
 
   create_table "roles", force: :cascade do |t|

@@ -1,10 +1,15 @@
 MediaTimeAdmin:
   name: media_time_admin
   membershiplevels: [super_admin]
+  permissions: [MediaTimeCreateMediaBan]
+  app: MediaTime
 MediaTimeModerator:
   name: media_time_moderator
   membershiplevels: [super_admin]
+  permissions: [MediaTimeApproveMediaBan]
+  app: MediaTime
 GroupsAdmin:
   name: groups_admin
-  permissions: ["indexGroups", "createGroups"]
+  permissions: [UserManagerCreateUser, UserManagerCreateUser]
   membershiplevels: [super_admin]
+  app: UserManager

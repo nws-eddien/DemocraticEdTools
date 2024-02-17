@@ -7,19 +7,19 @@ class GroupPolicy < ApplicationPolicy
     end
   
     def index?
-      @user.permissions.include? ("indexGroups")
+      @user.is_allowed_to?("indexGroups")
     end
 
     def create?
-      @user.permissions.include? ("createGroups")
+      @user.is_allowed_to?("createGroups")
     end
 
     def show?
-      @user.permissions.include? ("createGroups")
+      @user.is_allowed_to?("createGroups")
     end
 
     def update?
-      @user.permissions.include? ("createGroups")
+      @user.is_allowed_to?("createGroups")
     end
 
   class Scope

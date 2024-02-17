@@ -1,0 +1,28 @@
+UserManagerCreateUser:
+  app: UserManager
+  name: createUser
+
+UserManagerDeleteUser:
+  app: UserManager
+  name: deleteUser
+
+UserManagerEditUser:
+  app: UserManager
+  name: editUser
+
+UserManagerShowUser:
+  app: UserManager
+  name: showUser
+
+UserManagerIndexUsers:
+  app: UserManager
+  name: indexUsers
+
+MediaTimeCreateMediaBan:
+  app: MediaTime
+  name: createMediaBan
+
+MediaTimeApproveMediaBan:
+  app: MediaTime
+  name: approveMediaBan
+

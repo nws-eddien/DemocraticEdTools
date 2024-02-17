@@ -7,27 +7,24 @@ class MediaTimePolicy < ApplicationPolicy
     end
 
     def index?
-      @user.permissions.include? ("indexGroups")
+      @user.is_allowed_to? ("indexUsers")
     end
 
     def create?
-      @user.permissions.include? ("createGroups")
+      @user.is_allowed_to? ("createUsers")
     end
 
     def show?
-      @user.permissions.include? ("createGroupsa")
+      @user.is_allowed_to? ("showUsers")
     end
 
-  def update?
-    @user.permissions.include? ("createGroups")
-  end
+    def update?
+      @user.is_allowed_to? ("updateUsers")
+    end
 
-  def edit?
-    puts @record.user.id
-    puts @user.id
-    puts @user.permissions.include?("createGaaroups") || true
-    @user.permissions.include?("createGaaroups") || @record.user.id == @user.id
-  end
+    def edit?
+      @user.permissions.is_allowed_to? ("editUsers") || @record.user.id == @user.id
+    end
 
   class Scope
       def initialize(user, scope)

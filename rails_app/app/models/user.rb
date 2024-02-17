@@ -67,7 +67,6 @@ class User < ApplicationRecord
 
   def permissions
     Rails.cache.fetch("user_#{self.id}_permissions", :expires_in => 5.minutes) do
-      puts "renewing cache"
       all_roles.collect { |role| role.permissions }.flatten.uniq
     end
   end
@@ -76,6 +75,9 @@ class User < ApplicationRecord
     self.as_json(:methods => [:permissions])
   end
 
+  def is_allowed_to?(permission_name)
+    permissions.collect {|permission| permission.name}.include? (permission_name)
+  end
   def email_required?
     false
   end

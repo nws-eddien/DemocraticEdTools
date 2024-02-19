@@ -55,6 +55,7 @@ services:
 
 
   dst__sidekiq-dev:
+    container_name: dst_sidekiq_dev
     build: 
       context: ../rails_app
       dockerfile: Dockerfile_dev

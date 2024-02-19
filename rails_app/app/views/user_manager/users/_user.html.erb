@@ -2,7 +2,12 @@
   <div class="card">
     <div class="card-content">
       <div class="list-item">
-        <%= link_to user.name.titleize, user_manager_user_path(user), data: { turbo_frame: "_top" } %>
+        <div class="d-flex align-center">
+          <% if user.avatar.attached? %>
+            <%= image_tag user.avatar, :size => 30, class: "mr-4"%>
+          <% end %>
+          <%= link_to user.name.titleize, user_manager_user_path(user), data: { turbo_frame: "_top" } %>
+        </div>
         <div class="list-item-append">
           <% if policy(user).destroy? %>
             <%= button_to icon('fa-solid', 'trash', class:"fa-1x"), user_manager_user_path(user),form: { data: { turbo_confirm: "Möchtest du die Gruppe #{user.name.titleize} wirklich löschen?" } }, method: :delete, class: "btn btn-red mr-2"%>

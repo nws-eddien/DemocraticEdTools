@@ -10,7 +10,6 @@ class User < ApplicationRecord
   after_create :initialize_user
   validates :name, presence: true
   validates :email, format: URI::MailTo::EMAIL_REGEXP, :allow_blank => true
-
   def self.create_dummys(number = 1)
     number.times do
       charset = Array("a".."z")
@@ -25,8 +24,16 @@ class User < ApplicationRecord
       self.pin = generate_pin
     end
     save
+    add_identicon
   end
 
+  def add_identicon
+    tempfile = Tempfile.new([name, ".png"])
+    tempfile.binmode
+    tempfile.write(RubyIdenticon.create(name))
+    tempfile.rewind
+    avatar.attach(io: tempfile, filename: "user_#{id}.png", content_type: "image/png")
+  end
   def generate_password
     if self.password == nil
       charset = Array("0".."9") + Array("a".."z")
@@ -65,7 +72,10 @@ class User < ApplicationRecord
     (self.roles + self.memberships.collect { |membership| membership.roles }).flatten.uniq
   end
 
-  def permissions
+  def permissions(force=false)
+    if force
+      Rails.cache.delete("user_#{self.id}_permissions")
+    end
     Rails.cache.fetch("user_#{self.id}_permissions", :expires_in => 5.minutes) do
       all_roles.collect { |role| role.permissions }.flatten.uniq
     end

@@ -36,6 +36,7 @@ gem "redis"
 gem "sidekiq"
 gem "aws-sdk-s3"
 gem "font-awesome-sass"
+gem "ruby_identicon"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 

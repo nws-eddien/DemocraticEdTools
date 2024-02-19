@@ -1,0 +1,14 @@
+
+<%= simple_form_for [:user_manager, app, role] do |f| %>
+  <%= form_error_notification(role) %>
+  <%= f.input :name, html5: true, input_html: { autofocus: true } %>
+  <%= render "multiselect_permissions", {form: f, permissions: @permissions,
+                                   role: @role,
+                                   multiselect_elements_value: @multiselect_permissions_elements_value,
+                                   multiselect_names_value: @multiselect_permissions_names_value}
+  %>
+  <div class="card-actions">
+    <%= link_to "Abbrechen", user_manager_app_path(app), class: "btn btn-red" %>
+    <%= f.submit class: "btn btn-green" %>
+  </div>
+<% end %>

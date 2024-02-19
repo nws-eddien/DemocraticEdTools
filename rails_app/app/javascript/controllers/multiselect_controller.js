@@ -24,23 +24,25 @@ export default class extends Controller {
     }
     connect ()  {
         this.update_selection()
-        let self = this
-        this.closeMenuEventListener = document.addEventListener("mouseup", function (event) {
-            var obj = self.element
-            var obj2 = document.getElementById(self.targetidValue);
-            if (!obj.contains(event.target) && !obj2.contains(event.target)) {
-                obj.style.display = "none"
-            }
-            if (obj2.contains(event.target)) {
-                if (window.getComputedStyle(obj).display === "none") {
-                    obj.style.display = "flex"
-                } else {
-                    obj.style.display = "none"
-                }
-            }
-        })
+        this.boundToggleMultiselect = this.toggleMultiselect.bind(this)
+        document.addEventListener("mouseup", this.boundToggleMultiselect)
     }
     disconnect() {
-        document.removeEventListener('beforeunload', this.closeMenuEventListener)
+        document.removeEventListener('mouseup', this.boundToggleMultiselect)
+    }
+
+    toggleMultiselect (e) {
+        var obj = this.element
+        var obj2 = document.getElementById(this.targetidValue);
+        if (!obj.contains(e.target) && !obj2.contains(e.target)) {
+            obj.style.display = "none"
+        }
+        if (obj2.contains(e.target)) {
+            if (window.getComputedStyle(obj).display === "none") {
+                obj.style.display = "flex"
+            } else {
+                obj.style.display = "none"
+            }
+        }
     }
 }

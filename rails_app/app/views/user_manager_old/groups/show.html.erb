@@ -5,7 +5,7 @@
   <div class="container-top-actions">
     <%= link_to "Mitgliedschaftslevel hinzufügen", new_user_manager_membershiplevel_path, class: "btn btn-green"%>
   </div>
-  <div class="card-content">
+  <div class="container-content">
     <% @group.membershiplevels.each do |membershiplevel| %>
       <%= render "user_manager/membershiplevels/membershiplevel", {membershiplevel: membershiplevel}%>
     <% end %>

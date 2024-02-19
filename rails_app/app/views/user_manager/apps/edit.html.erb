@@ -1,0 +1,12 @@
+<%= link_to sanitize("&larr; Zurück zu Apps"), user_manager_apps_path %>
+<div class="container-title">
+  <h1> App bearbeiten </h1>
+</div>
+<div class="container-content">
+  <%= turbo_frame_tag @app do %>
+    <div class="card">
+      <%= render "form", app: @app %>
+    </div>
+  <% end %>
+</div>
+

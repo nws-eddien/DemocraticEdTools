@@ -44,8 +44,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_17_143911) do
 
   create_table "apps", force: :cascade do |t|
     t.string "name"
+    t.string "identifier"
+    t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["identifier"], name: "index_apps_on_identifier", unique: true
+    t.index ["name"], name: "index_apps_on_name", unique: true
   end
 
   create_table "groups", force: :cascade do |t|
@@ -140,10 +144,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_17_143911) do
   create_table "permissions", force: :cascade do |t|
     t.bigint "app_id"
     t.string "name"
+    t.string "identifier"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["app_id"], name: "index_permissions_on_app_id"
+    t.index ["identifier"], name: "index_permissions_on_identifier", unique: true
     t.index ["name"], name: "index_permissions_on_name", unique: true
   end
 
@@ -180,6 +186,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_17_143911) do
     t.integer "pin_length", default: 5
     t.boolean "easy_pin", default: false
     t.string "encrypted_password"
+    t.boolean "is_super_admin", default: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

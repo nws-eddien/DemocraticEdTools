@@ -1,4 +1,6 @@
 MediaTime:
+  identifier: MediaTime
   name: MediaTime
 UserManager:
+  identifier: UserManager
   name: UserManager

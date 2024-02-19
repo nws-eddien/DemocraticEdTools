@@ -1,3 +1,3 @@
 <component name="DependencyValidationManager">
-  <scope name="UserManager" pattern="file[tools_for_democratic_schools]:rails_app/app/controllers/user_manager//*||file[tools_for_democratic_schools]:rails_app/app/models/permissions//*||file[tools_for_democratic_schools]:rails_app/app/views/user_manager//*||file:rails_app/config/routes.rb||file[tools_for_democratic_schools]:rails_app/db/migrate//*||file:rails_app/app/models/user.rb" />
+  <scope name="UserManager" pattern="file[tools_for_democratic_schools]:rails_app/app/controllers/user_manager//*||file[tools_for_democratic_schools]:rails_app/app/models/permissions//*||file[tools_for_democratic_schools]:rails_app/app/views/user_manager//*||file:rails_app/config/routes.rb||file[tools_for_democratic_schools]:rails_app/db/migrate//*||file:rails_app/app/models/user.rb||file:rails_app/app/models/app.rb" />
 </component>

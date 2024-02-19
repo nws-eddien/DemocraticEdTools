@@ -1,0 +1,2 @@
+module UserManager::AppsHelper
+end

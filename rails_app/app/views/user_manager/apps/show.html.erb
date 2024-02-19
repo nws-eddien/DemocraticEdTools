@@ -1,0 +1,17 @@
+<%= link_to sanitize("&larr; Zurück zu Apps"), user_manager_apps_path %>
+<div class="container-title">
+  <h1><%= @app.name %></h1>
+  <% if policy(Role.new).create? %>
+    <%= link_to "Neue Rolle",
+                new_user_manager_app_role_path(@app),
+                data: { turbo_frame: dom_id(Role.new)},
+                class: "btn btn-green" %>
+  <% end %>
+</div>
+<div class="container-content">
+
+  <%= turbo_frame_tag Role.new %>
+  <%= turbo_frame_tag "roles" do %>
+    <%= render @roles, app: @app %>
+  <% end %>
+</div>

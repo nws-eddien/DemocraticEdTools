@@ -1,0 +1,13 @@
+<%= turbo_stream.remove @role%>
+
+<% if previous_role = @role.previous_role %>
+  <%= turbo_stream.after previous_role do  %>
+    <%= render @role, app: @app %>
+  <% end %>
+<% else %>
+  <%= turbo_stream.prepend "roles" do %>
+    <%= render @role, app: @app %>
+  <% end %>
+<% end %>
+
+<%= render_turbo_stream_flash_messages %>

@@ -10,7 +10,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.1]
       t.integer :pin_length,  default: 5
       t.boolean :easy_pin, default: false
       t.string :encrypted_password, default: nil
-
+      t.boolean :is_super_admin, default: false
       ## Recoverable
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at

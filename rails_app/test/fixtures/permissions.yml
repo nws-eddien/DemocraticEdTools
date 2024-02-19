@@ -1,59 +1,74 @@
 UserManagerCreateUser:
   app: UserManager
-  name: createUser
+  identifier: createUser
+  name: userCreate
 
 UserManagerDeleteUser:
   app: UserManager
-  name: deleteUser
+  identifier: deleteUser
+  name: userDelete
 
 UserManagerEditUser:
   app: UserManager
-  name: editUser
+  identifier: editUser
+  name: userEdit
 
 UserManagerShowUser:
   app: UserManager
-  name: showUser
+  identifier: showUser
+  name: userShow
 
 UserManagerIndexUsers:
   app: UserManager
-  name: indexUsers
+  identifier: indexUsers
+  name: usersIndex
 
 MediaTimeCreateMediaBan:
   app: MediaTime
-  name: createMediaBan
+  identifier: createMediaBan
+  name: mediaBanCreate
 
 MediaTimeApproveMediaBan:
   app: MediaTime
-  name: approveMediaBan
+  identifier: approveMediaBan
+  name: MediaBanApprove
 
 UserManagerCreateGroup:
   app: UserManager
-  name: createGroup
+  identifier: createGroup
+  name: groupCreate
 
 UserManagerDeleteGroup:
   app: UserManager
-  name: deleteGroup
+  identifier: deleteGroup
+  name: groupDelete
 
 UserManagerEditGroup:
   app: UserManager
-  name: editGroup
+  identifier: editGroup
+  name: groupEdit
 
 UserManagerShowGroup:
   app: UserManager
-  name: showGroup
+  identifier: showGroup
+  name: groupShow
 
 UserManagerIndexGroups:
   app: UserManager
-  name: indexGroups
+  identifier: indexGroups
+  name: groupsIndex
 
 UserManagerCreateMembershiplevel:
   app: UserManager
-  name: createMembershiplevel
+  identifier: createMembershiplevel
+  name: membershiplevelCreate
 
 UserManagerDeleteMembershiplevel:
   app: UserManager
-  name: deleteMembershiplevel
+  identifier: deleteMembershiplevel
+  name: membershiplevelDelete
 
 UserManagerUpdateMembershiplevel:
   app: UserManager
-  name: updateMembershiplevel
+  identifier: updateMembershiplevel
+  name: membershiplevelUpdate

@@ -19,6 +19,9 @@ Rails.application.routes.draw do
       get 'pin_generator' => 'users#pin_generator', as: :pin_generator
       patch 'generate_pin' => 'users#generate_pin', as: :generate_pin
     end
+    resources :apps do
+      resources :roles
+    end
   end
 
   namespace :media_time do

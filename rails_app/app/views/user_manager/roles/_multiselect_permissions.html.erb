@@ -1,0 +1,19 @@
+<div class="form__app multiselect">
+  <%= form.label :Rollen, class: "form-label"%>
+  <div class="multiselect_selected_items_wrapper" id="role_<%= role.id %>_selected_permissions"></div>
+  <div class="multiselect_wrapper"
+       data-multiselect-elements-value="<%= multiselect_elements_value %>"
+       data-multiselect-names-value="<%= multiselect_names_value %>"
+       data-multiselect-targetid-value="role_<%= role.id %>_selected_permissions"
+       data-controller="multiselect">
+
+    <%= form.collection_check_boxes :permission_ids, permissions, :id, :name do |b| %>
+      <%= label_tag "role_#{role.id}_permission_ids_#{b.object.id}", class: 'multiselect_item' do %>
+        <%= b.check_box(id: "role_#{role.id}_permission_ids_#{b.object.id}",
+                        class: "checkbox multiselect_checkbox",
+                        "data-action": "multiselect#update_selection") %>
+        <%= b.object.name.titleize %>
+      <% end %>
+    <% end %>
+  </div>
+</div>

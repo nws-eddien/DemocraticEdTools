@@ -1,0 +1,18 @@
+<%= simple_form_for [:user_manager, app], html: {clasS: "form"} do |f| %>
+   <div class="card-content" >
+     <%= form_error_notification(app) %>
+     <div class="list-item">
+       <%= f.input :name, input_html: { autofocus: true } %>
+       <%= f.input :active,:input_html => { :class => "checkbox" } %>
+
+       <div class="list-item-append">
+         <%= link_to icon("fa-solid", "xmark"), user_manager_apps_path, class: "btn btn-red mr-2" %>
+         <%= button_tag icon("fa-solid", "floppy-disk"), type: "submit", class: "btn btn-green"  %>
+       </div>
+     </div>
+
+   </div>
+
+
+
+<% end %>

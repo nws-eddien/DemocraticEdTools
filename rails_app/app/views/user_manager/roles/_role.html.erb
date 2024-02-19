@@ -1,0 +1,25 @@
+<%= turbo_frame_tag role do %>
+  <div class="card">
+    <div class="card-title">
+      <%= role.name.titleize %>
+    </div>
+    <div class="card-content">
+      <% role.users.order(name: :asc).each do |user| %>
+        <%= user.name.titleize %><%= "," if user != role.users.order(name: :asc).last %>
+      <% end %>
+    </div>
+    <div class="card-content">
+      <% role.permissions.order(name: :asc).each do |permission| %>
+        <%= permission.name.titleize %><%= "," if permission != role.permissions.order(name: :asc).last %>
+      <% end %>
+    </div>
+      <div class="card-actions">
+        <% if policy(role).destroy? %>
+          <%= button_to "Löschen", [:user_manager, app, role], form: { data: { turbo_confirm: "Möchtest du das Rolle #{role.name.titleize} wirklich löschen?" } }, method: :delete, class: "btn btn-red mr-2"%>
+        <% end %>
+        <% if policy(role).update? %>
+          <%= link_to "Bearbeiten", [:edit, :user_manager, app, role], class: "btn btn-yellow" %>
+        <% end %>
+    </div>
+  </div>
+<% end %>

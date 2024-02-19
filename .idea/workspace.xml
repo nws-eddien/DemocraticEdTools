@@ -5,10 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="permissions">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/apps_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/roles_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/helpers/user_manager/apps_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/helpers/user_manager/roles_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/policies/app_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/policies/role_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/_app.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/_empty_state.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/create.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/destroy.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/update.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/roles/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/roles/_multiselect_permissions.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/roles/_role.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/roles/create.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/roles/destroy.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/roles/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/roles/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/roles/update.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/controllers/user_manager/apps_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/controllers/user_manager/roles_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/policies/app_policy_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/policies/role_policy_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scopes/UserManager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scopes/UserManager.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/.dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/.dev.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/javascript/controllers/multiselect_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/javascript/controllers/multiselect_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/models/app.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/app.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/models/permissions/permission.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/permissions/permission.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/models/permissions/role.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/permissions/role.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/_footer.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/users/add_avatar_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/groups/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager_old/groups/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/db/migrate/20230112123946_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/migrate/20230112123946_devise_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/db/migrate/20231022152717_create_apps.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/migrate/20231022152717_create_apps.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/db/migrate/20240217143748_create_permissions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/migrate/20240217143748_create_permissions.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/apps.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/apps.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/permissions.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/permissions.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,47 +86,54 @@
   </component>
   <component name="NamedScopeManager">
     <order>
-      <scope name="UserManager" />
       <scope name="Frontend" />
       <scope name="App" />
       <scope name="M-C-V" />
       <scope name="Groups" />
+      <scope name="UserManager" />
     </order>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2bueWMnAFujoRNiK6kqUytSv6Gc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/eddien/projects/tools_for_democratic_schools/rails_app/app/views/user_manager/users&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/schule/projects/tools_for_democratic_schools/rails_app/app/views/user_manager/roles",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.scopes",
+    "ts.external.directory.path": "/snap/rubymine/403/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rails_app/app/views/user_manager/roles" />
+      <recent name="$PROJECT_DIR$/rails_app/app/views/user_manager/apps" />
       <recent name="$PROJECT_DIR$/rails_app/app/views/user_manager/users" />
       <recent name="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels" />
       <recent name="$PROJECT_DIR$/rails_app/app/controllers/user_manager" />
@@ -235,6 +284,7 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="title changed" />
     <MESSAGE value="pin_generator" />
     <MESSAGE value="restructure css" />

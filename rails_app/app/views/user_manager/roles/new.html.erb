@@ -1,0 +1,9 @@
+<%= link_to sanitize("&larr; Zurück zu App"), user_manager_app_path(@app) %>
+<div class="container-title">
+  <h1>Neues Rolle</h1>
+</div>
+<%= turbo_frame_tag @role do %>
+  <div class="card">
+    <%= render "form", app: @app, role: @role %>
+  </div>
+<% end %>

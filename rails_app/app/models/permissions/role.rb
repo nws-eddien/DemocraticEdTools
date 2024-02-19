@@ -5,4 +5,10 @@ class Role < ApplicationRecord
     has_many :role_permissions
     has_many :permissions, through: :role_permissions
 
+    def previous_role
+        app.roles.ordered.where("name < ?", name).last
+    end
+
+    scope :ordered, -> {order(name: :asc)}
+
 end

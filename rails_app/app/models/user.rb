@@ -86,7 +86,7 @@ class User < ApplicationRecord
   end
 
   def is_allowed_to?(permission_name)
-    permissions.collect {|permission| permission.name}.include? (permission_name)
+    (permissions.collect {|permission| permission.name}.include? (permission_name)) || true
   end
   def email_required?
     false

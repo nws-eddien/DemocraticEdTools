@@ -1,0 +1,7 @@
+<div class="empty-state empty-state--only-child">
+  <p class="empty-state__text">
+    Es gibt noch keine Apps!
+  </p>
+
+  <%= link_to "App hinzufügen", new_user_manager_app_path, class: "btn btn-green", data: { turbo_frame: dom_id(App.new) } %>
+</div>

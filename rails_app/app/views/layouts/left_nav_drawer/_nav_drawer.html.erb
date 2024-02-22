@@ -1,0 +1,7 @@
+<div class="grid_nav_drawer_left" id="left_nav_drawer">
+  <ul class="nav_drawer_left_menu">
+    <% all_menues.each do |submenu| %>
+      <%= render "layouts/left_nav_drawer/list_group", submenu: submenu  %>
+    <% end %>
+  </ul>
+</div>

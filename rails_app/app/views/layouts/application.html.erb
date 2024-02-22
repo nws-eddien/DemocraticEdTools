@@ -16,6 +16,8 @@
     <div id="flash" class="flash">
       <%= render "layouts/flash" %>
     </div>
+    <%= render "layouts/left_nav_drawer/nav_drawer" %>
+    <div id="nav_drawer_left_overlay" data-controller="toggle-left-nav-drawer" data-action="click->toggle-left-nav-drawer#toggle"></div>
     <div class="grid_main">
       <div class="grid_content content">
         <%= yield %>

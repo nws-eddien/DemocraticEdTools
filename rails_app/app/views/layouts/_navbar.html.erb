@@ -1,7 +1,10 @@
 <nav class="navbar grid_navbar">
-  <span class="navbar-title">
+  <div data-controller="toggle-left-nav-drawer">
+    <button class="fa-solid fa-bars left_nav_bar_toggle"  data-action="toggle-left-nav-drawer#toggle"></button>
+    <span class="navbar-title">
     Democratic School Tools
-  </span>
+    </span>
+  </div>
   <div class="d-flex align-center mr-6">
     <% if user_signed_in? %>
       <span class="mr-2"><%= current_user.name.capitalize %></span>

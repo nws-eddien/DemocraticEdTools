@@ -36,10 +36,12 @@ class UserManager::UsersController < ApplicationController
   end
 
   def pin_generator
+    authorize @user
     @pin = @user.generate_pin
   end
 
   def generate_pin
+    authorize @user
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to user_manager_pin_generator_url(@user), notice: "User was successfully updated." }

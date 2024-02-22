@@ -1,7 +1,0 @@
-  <li class="submenu_title"><%= submenu[:title] %></li>
-  <% if @current_app == submenu[:app_name] || true %>
-    <% submenu[:links].each do |link| %>
-      <%= link_to link[:label], link[:path], class: "submenu_link submenu_item"%>
-    <% end %>
-  <% end %>
-

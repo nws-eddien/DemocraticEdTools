@@ -1,12 +1,6 @@
 <%= turbo_stream_from "apps" %>
 <div class="container-title">
   <h1>Apps</h1>
-  <% if policy(App.new).create? %>
-    <%= link_to icon("fa-solid", "plus", "App hinzufügen", class: "fa-1x"),
-                new_user_manager_app_path,
-                class: "btn btn-green",
-                data: { turbo_frame: dom_id(App.new) }%>
-  <% end %>
 </div>
 <div class="container-content">
   <%= turbo_frame_tag App.new %>

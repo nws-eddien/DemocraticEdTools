@@ -2,11 +2,9 @@ class MediaTime::MediaGlobalSettingsController < ApplicationController
   before_action :set_media_global_settings
 
   def show
-
   end
 
   def edit
-
   end
 
   def update
@@ -23,6 +21,7 @@ class MediaTime::MediaGlobalSettingsController < ApplicationController
 
   def set_media_global_settings
     @media_global_settings = MediaGlobalSetting.first
+    authorize @media_global_settings
   end
 
   def media_global_settings_params

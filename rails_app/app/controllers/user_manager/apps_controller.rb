@@ -13,11 +13,6 @@ class UserManager::AppsController < ApplicationController
     @roles = @app.roles.ordered
   end
 
-  def new
-    @app = App.new
-    authorize @app
-  end
-
   def edit
     authorize @app
   end

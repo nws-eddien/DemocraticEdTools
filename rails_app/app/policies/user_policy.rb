@@ -1,21 +1,14 @@
 class UserPolicy < ApplicationPolicy
-  attr_reader :user, :record
-
-  def initialize(user, record)
-    @user = user
-    @record = record
-  end
-
   def index?
-    editor?
+    allowed_to?("indexUsers")
   end
 
   def show?
-    editor?
+    allowed_to?("showUser")
   end
 
   def create?
-    admin?
+    allowed_to?("createUser")
   end
 
   def new?
@@ -23,43 +16,16 @@ class UserPolicy < ApplicationPolicy
   end
 
   def update?
-    admin?
+    allowed_to?("updateUser")
   end
 
   def edit?
-    admin?
+    update?
   end
 
   def destroy?
-    admin?
+    allowed_to?("destroyUser")
   end
 
-  def all?
-    true
-  end
 
-  def editor?
-    true
-  end
-
-  def admin?
-    true
-  end
-
-  class Scope
-    def initialize(user, scope)
-      @user = user
-      @scope = scope
-    end
-
-    def resolve
-      raise NotImplementedError, "You must define #resolve in #{self.class}"
-    end
-
-    private
-
-
-
-    attr_reader :user, :scope
-  end
 end

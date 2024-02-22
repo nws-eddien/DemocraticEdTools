@@ -4,31 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="apps, roles, permissions">
-      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/nav_drawer_left.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/helpers/menu_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/javascript/controllers/toggle_left_nav_drawer_controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/left_nav_drawer/_list_group.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/left_nav_drawer/_nav_drawer.html.erb" afterDir="false" />
+    <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="Style, seeds, nav_drawer">
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/permissions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/policies/media_global_setting_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/_left_nav_drawer.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/policies/application_controller_policy_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/policies/media_global_settings_policy_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/format/padding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/format/padding.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/grid_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure/grid_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/flash.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/flash.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/_footer.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/devise_users/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/devise_users/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/media_time/logins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/media_time/logins_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/media_time/media_global_settings_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/media_time/media_global_settings_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/pages_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/pages_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/apps_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/apps_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/groups_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/controllers/user_manager/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/helpers/menu_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/helpers/menu_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/app_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/app_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/application_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/application_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/group_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/group_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/media_time_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/media_time_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/membershiplevel_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/membershiplevel_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/role_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/role_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/policies/user_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/policies/user_policy.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/_navbar.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/db/seeds/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/seeds/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/groups.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/groups.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/media_times.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/media_times.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/membershiplevels.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/membershiplevels.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/roles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/roles.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/users.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/left_nav_drawer/_list_group.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/left_nav_drawer/_nav_drawer.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/pages/home.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/pages/home.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/_app.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/_app.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/user_manager/apps/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +76,7 @@
       <scope name="M-C-V" />
       <scope name="Groups" />
       <scope name="UserManager" />
+      <scope name="permissions" />
     </order>
   </component>
   <component name="ProjectColorInfo">{
@@ -117,8 +125,8 @@
       <recent name="$PROJECT_DIR$/rails_app/app/controllers/user_manager" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/rails_app/app/views/layouts/left_nav_drawer" />
       <recent name="$PROJECT_DIR$/rails_app/app/views/layouts" />
+      <recent name="$PROJECT_DIR$/rails_app/app/views/layouts/left_nav_drawer" />
       <recent name="$PROJECT_DIR$/rails_app/app/models/permissions" />
       <recent name="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure" />
       <recent name="$PROJECT_DIR$/rails_app/app/controllers/user_manager" />
@@ -263,11 +271,30 @@
       <option name="project" value="LOCAL" />
       <updated>1708384847012</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Style, seeds, nav_drawer">
+      <option name="closed" value="true" />
+      <created>1708561813634</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708561813634</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -284,6 +311,7 @@
     <MESSAGE value="fixed multiselects" />
     <MESSAGE value="permissions" />
     <MESSAGE value="apps, roles, permissions" />
-    <option name="LAST_COMMIT_MESSAGE" value="apps, roles, permissions" />
+    <MESSAGE value="Style, seeds, nav_drawer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Style, seeds, nav_drawer" />
   </component>
 </project>

@@ -1,7 +1,5 @@
 class UserManager::GroupsController < ApplicationController
   before_action :set_group, only: [:show, :edit, :update, :destroy]
-  include Pundit::Authorization
-  after_action :verify_authorized
   def index
     @groups = Group.ordered
     skip_authorization

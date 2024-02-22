@@ -1,24 +1,24 @@
 <nav class="navbar grid_navbar">
   <div data-controller="toggle-left-nav-drawer">
-    <button class="fa-solid fa-bars left_nav_bar_toggle"  data-action="toggle-left-nav-drawer#toggle"></button>
+    <button class="fa-solid fa-bars icon icon-button icon-white"  data-action="toggle-left-nav-drawer#toggle"></button>
     <span class="navbar-title">
     Democratic School Tools
     </span>
   </div>
   <div class="d-flex align-center mr-6">
     <% if user_signed_in? %>
-      <span class="mr-2"><%= current_user.name.capitalize %></span>
       <% if current_user.avatar.attached? %>
-        <%= image_tag current_user.avatar, :size => 50%>
+        <%= image_tag current_user.avatar, :size => 30, class: "mr-2"%>
       <%end %>
-      <%= button_to "Sign out",
+      <span class="mr-2"><%= current_user.name.capitalize %></span>
+      <%= button_to icon('fa-solid', 'sign-out', class:"fa-1x"),
                     destroy_user_session_path,
                     method: :delete,
-                    class: "btn btn-red" %>
+                    class: "icon icon-white icon-button" %>
     <% else %>
-      <%= link_to "Sign in",
+      <%= button_to icon('fa-solid', 'sign-in', class:"fa-1x"),
                   new_user_session_path,
-                  class: "btn btn-green" %>
+                  class: "icon icon-white icon-button" %>
     <% end %>
   </div>
 

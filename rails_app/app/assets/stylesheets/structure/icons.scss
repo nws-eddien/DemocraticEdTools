@@ -1,0 +1,24 @@
+.icon {
+  background-color: transparent;
+  border: none;
+  font-size: large;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.icon-button {
+  cursor: pointer;
+
+}
+
+.icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.29);
+}
+
+.icon-white {
+  color: white;
+}
+
+.icon-black {
+  color: black;
+}

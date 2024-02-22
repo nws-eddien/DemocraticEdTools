@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="permissions" pattern="file[tools_for_democratic_schools]:rails_app/app/controllers//*||file[tools_for_democratic_schools]:rails_app/app/policies//*" />
+</component>

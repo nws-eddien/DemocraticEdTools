@@ -4,9 +4,6 @@
       <div class="list-item">
         <%= link_to app.name.titleize, user_manager_app_path(app), data: { turbo_frame: "_top" } %>
         <div class="list-item-append">
-          <% if policy(app).destroy? %>
-            <%= button_to icon('fa-solid', 'trash', class:"fa-1x"), user_manager_app_path(app),form: { data: { turbo_confirm: "Möchtest du die App #{app.name.titleize} wirklich löschen?" } }, method: :delete, class: "btn btn-red mr-2"%>
-          <% end %>
           <% if policy(app).update? %>
             <%= link_to icon('fa-solid', 'pen-to-square', class:"fa-1x"), edit_user_manager_app_path(app), class: "btn btn-yellow" %>
           <% end %>

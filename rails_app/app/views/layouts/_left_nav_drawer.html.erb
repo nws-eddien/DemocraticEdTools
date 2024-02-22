@@ -1,0 +1,12 @@
+<div class="grid_nav_drawer_left" id="left_nav_drawer">
+  <ul class="nav_drawer_left_menu">
+    <% all_menues.each do |submenu| %>
+      <% if submenu[:links].any? {|link| link[:allowed]} %>
+        <li class="submenu_title"><%= submenu[:app].name %></li>
+        <% submenu[:links].each do |link| %>
+          <%= link_to link[:label], link[:path], class: "submenu_link submenu_item" if link[:allowed]%>
+        <% end %>
+      <% end %>
+  <% end %>
+  </ul>
+</div>

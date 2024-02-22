@@ -1,10 +1,30 @@
-<main class="container">
-  <h1>Quote editor</h1>
-  <p>A blazing fast quote editor built with Hotwire</p>
+<main class="container" >
+  <div class="container-title">
+    Tools for democratic schools
+  </div>
+  <div class="container-content d-flex">
+    <% all_menues.each do |menu| %>
+      <% if menu[:links].any? {|link| link[:allowed]} %>
+        <div class="card">
+          <div class="card-big-title">
+            <%= menu[:app].name %>
+          </div>
+          <div class="card-content d-flex flex-column">
+            <% menu[:links].each do |link| %>
+              <%= link_to link[:label], link[:path], class: "" if link[:allowed]%>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
 
-  <% if user_signed_in? %>
-    
-  <% else %>
-    <%= link_to "Sign in", new_user_session_path, class: "btn btn--dark" %>
-  <% end %>
+  <div class="container-actions">
+    <% if user_signed_in? %>
+
+    <% else %>
+      <%= link_to "Sign in", new_user_session_path, class: "btn btn--dark" %>
+    <% end %>
+  </div>
+
 </main>

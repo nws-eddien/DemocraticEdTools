@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   # patch 'membershiplevels/:id/update_users' => "membershiplevels#update_users", as: :membershiplevels_update_users
   #end
 
+  post "toggle_left_nav_drawer" => "layouts#toggle_left_nav_drawer", as: :toggle_left_nav_drawer
+
   namespace :user_manager do
     resources :groups do
       resources :membershiplevels, except: [:index, :show]

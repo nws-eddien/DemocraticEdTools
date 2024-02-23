@@ -1,10 +1,10 @@
 class UserPolicy < ApplicationPolicy
   def index?
-    allowed_to?("indexUsers")
+    true
   end
 
   def show?
-    allowed_to?("showUser")
+    true
   end
 
   def create?

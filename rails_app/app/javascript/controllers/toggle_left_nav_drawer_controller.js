@@ -2,19 +2,17 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="toggle-left-nav-drawer"
 export default class extends Controller {
-  connect() {
-    console.log("nix")
+  static values = {
+    open: Boolean,
   }
-
-  toggle() {
-    let drawer = document.getElementById("left_nav_drawer")
-    let overlay = document.getElementById("nav_drawer_left_overlay")
-    if (getComputedStyle(drawer).display === "none") {
-      drawer.style.display="block"
-      overlay.style.display="block"
+  connect() {
+    let grid = document.getElementById("grid-layout")
+    if (this.openValue) {
+      if (!grid.classList.contains("grid_nav_drawer_open")) {
+        grid.classList.add('grid_nav_drawer_open');
+      }
     } else {
-      drawer.style.display="none"
-      overlay.style.display="none"
+      grid.classList.remove('grid_nav_drawer_open');
     }
   }
 }

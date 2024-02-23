@@ -1,0 +1,21 @@
+<div class="grid_nav_drawer_left nav_drawer_left">
+  <div class="nav_drawer_left_content">
+    <ul class="nav_drawer_left_menu">
+      <% all_menues.each do |submenu| %>
+        <% if submenu[:links].any? {|link| link[:allowed]} %>
+          <li class="submenu_title"><%= submenu[:app].name %></li>
+          <% submenu[:links].each do |link| %>
+            <%= link_to link[:label], link[:path], class: "submenu_link submenu_item" if link[:allowed]%>
+          <% end %>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+  <%= turbo_frame_tag "nav_drawer_left" do %>
+    <div data-toggle-left-nav-drawer-open-value="<%= Rails.cache.read("session_#{session.id}_left_nav_drawer") %>"
+         data-controller="toggle-left-nav-drawer">
+    </div>
+  <% end %>
+</div>
+
+

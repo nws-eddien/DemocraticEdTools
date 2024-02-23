@@ -3,6 +3,7 @@
   <head>
     <title>DemocraticEdTools</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="drawer_left" content="closed">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,13 +12,12 @@
   </head>
 
 <body>
-  <div class="grid_layout">
+  <div class="grid_layout" id="grid-layout">
     <%= render "layouts/navbar" %>
+      <%= render "layouts/nav_drawer_left" %>
     <div id="flash" class="flash">
       <%= render "layouts/flash" %>
     </div>
-    <%= render "layouts/left_nav_drawer" %>
-    <div id="nav_drawer_left_overlay" data-controller="toggle-left-nav-drawer" data-action="click->toggle-left-nav-drawer#toggle"></div>
     <div class="grid_main">
       <div class="grid_content content">
         <%= yield %>

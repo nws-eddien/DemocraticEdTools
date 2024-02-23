@@ -5,11 +5,11 @@ class UserManager::UsersController < ApplicationController
 
   def index
     @users = User.ordered
-    skip_authorization
+    authorize @users
   end
 
   def show
-    skip_authorization
+    authorize @user
     @membershiplevels = @user.membershiplevels.ordered
   end
 

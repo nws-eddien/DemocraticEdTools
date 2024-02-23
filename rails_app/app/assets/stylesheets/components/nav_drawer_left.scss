@@ -1,16 +1,19 @@
-.grid_nav_drawer_left {
+.nav_drawer_left {
   background: linear-gradient(to bottom,  #924AFF, #0099CC);
-  display: none;
-  padding: 8px;
-  color: white;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 5;
-  z-index: 4;
+  display: block;
   box-shadow: #2E2F30;
   box-shadow: 12px 0px 12px -8px rgba(0, 0, 0, 0.49);
+}
 
+.nav_drawer_left_content {
+  padding: 8px;
+  color: white;
+  white-space: nowrap;
+}
+
+
+.nav-drawer-open {
+  left: 0; /* Slide in */
 }
 
 #nav_drawer_left_overlay {

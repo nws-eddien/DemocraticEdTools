@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   z-index:5;
-  background: linear-gradient(to bottom,  #0099CC,  #924AFF);
+  background: linear-gradient(to bottom,  var(--color-layout-primary),  var(--color-layout-secondary));
   box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.49);
 
   padding: 8px;

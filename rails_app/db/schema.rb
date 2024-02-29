@@ -84,7 +84,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_17_143911) do
 
   create_table "media_penalties", force: :cascade do |t|
     t.bigint "media_time_id"
-    t.date "activated_at", default: "2024-02-21"
+    t.date "activated_at", default: "2024-02-24"
     t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -11,6 +11,9 @@ module Base
     # Initialize configuration defaults for originally generated Rails version.
     config.eager_load_paths += %W(#{config.root}/app/models/media_time)
     config.eager_load_paths += %W(#{config.root}/app/models/permissions)
+    config.eager_load_paths += %W(#{config.root}/app/models/rulebook)
+    config.eager_load_paths += %W(#{config.root}/app/models/rulebook/joins)
+
     config.load_defaults 7.1
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do

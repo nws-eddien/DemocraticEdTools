@@ -1,0 +1,17 @@
+<%= turbo_frame_tag decision_making_unit do %>
+  <div class="card">
+    <div class="card-content">
+      <div class="list-item">
+        <%= link_to decision_making_unit.name.titleize, rulebook_decision_making_unit_path(decision_making_unit), data: { turbo_frame: "_top" } %>
+        <div class="list-item-append">
+          <% if policy(decision_making_unit).destroy? %>
+            <%= button_to icon('fa-solid', 'trash', class:"fa-1x"), rulebook_decision_making_unit_path(decision_making_unit),form: { data: { turbo_confirm: "Möchtest du die Entscheidungsgremium #{decision_making_unit.name.titleize} wirklich löschen?" } }, method: :delete, class: "btn btn-red mr-2"%>
+          <% end %>
+          <% if policy(decision_making_unit).update? %>
+            <%= link_to icon('fa-solid', 'pen-to-square', class:"fa-1x"), edit_rulebook_decision_making_unit_path(decision_making_unit), class: "btn btn-yellow" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

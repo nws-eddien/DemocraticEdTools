@@ -1,0 +1,17 @@
+<%= turbo_stream_from "rule_types" %>
+<div class="container-title">
+  <h1>Typen</h1>
+  <% if policy(RuleType.new).create? %>
+    <%= link_to icon("fa-solid", "plus", "Regel Typ hinzufügen", class: "fa-1x"),
+                new_rulebook_rule_type_path,
+                class: "btn btn-green",
+                data: { turbo_frame: dom_id(RuleType.new) }%>
+  <% end %>
+</div>
+<div class="container-content">
+  <%= turbo_frame_tag RuleType.new %>
+  <%= turbo_frame_tag "rule_types" do %>
+    <%= render "rulebook/rule_types/empty_state" %>
+    <%= render @rule_types %>
+  <% end %>
+</div>

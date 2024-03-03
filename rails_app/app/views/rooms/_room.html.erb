@@ -1,0 +1,17 @@
+<%= turbo_frame_tag room do %>
+  <div class="card">
+    <div class="card-content">
+      <div class="list-item">
+        <%= link_to room.name.titleize, room_path(room), data: { turbo_frame: "_top" } %>
+        <div class="list-item-append">
+          <% if policy(room).destroy? %>
+            <%= button_to icon('fa-solid', 'trash', class:"fa-1x"), room_path(room),form: { data: { turbo_confirm: "Möchtest du die Raum #{room.name.titleize} wirklich löschen?" } }, method: :delete, class: "btn btn-red mr-2"%>
+          <% end %>
+          <% if policy(room).update? %>
+            <%= link_to icon('fa-solid', 'pen-to-square', class:"fa-1x"), edit_room_path(room), class: "btn btn-yellow" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

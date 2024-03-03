@@ -1,0 +1,17 @@
+<%= turbo_frame_tag rule_type do %>
+  <div class="card">
+    <div class="card-content">
+      <div class="list-item">
+        <%= link_to rule_type.name.titleize, rulebook_rule_type_path(rule_type), data: { turbo_frame: "_top" } %>
+        <div class="list-item-append">
+          <% if policy(rule_type).destroy? %>
+            <%= button_to icon('fa-solid', 'trash', class:"fa-1x"), rulebook_rule_type_path(rule_type),form: { data: { turbo_confirm: "Möchtest du die Regel Typ #{rule_type.name.titleize} wirklich löschen?" } }, method: :delete, class: "btn btn-red mr-2"%>
+          <% end %>
+          <% if policy(rule_type).update? %>
+            <%= link_to icon('fa-solid', 'pen-to-square', class:"fa-1x"), edit_rulebook_rule_type_path(rule_type), class: "btn btn-yellow" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

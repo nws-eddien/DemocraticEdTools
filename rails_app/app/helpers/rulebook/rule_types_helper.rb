@@ -1,0 +1,2 @@
+module Rulebook::RuleTypesHelper
+end

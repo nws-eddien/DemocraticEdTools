@@ -1,0 +1,7 @@
+<div class="empty-state empty-state--only-child">
+  <p class="empty-state__text">
+    Es gibt noch keine Typen!
+  </p>
+
+  <%= link_to "Regel Typ hinzufügen", new_rulebook_rule_type_path, class: "btn btn-green", data: { turbo_frame: dom_id(RuleType.new) } %>
+</div>

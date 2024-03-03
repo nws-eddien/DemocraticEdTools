@@ -1,0 +1,12 @@
+<%= link_to sanitize("&larr; Zurück zu Räume"), rooms_path %>
+<div class="container-title">
+  <h1> Raum bearbeiten </h1>
+</div>
+<div class="container-content">
+  <%= turbo_frame_tag @room do %>
+    <div class="card">
+      <%= render "form", room: @room %>
+    </div>
+  <% end %>
+</div>
+

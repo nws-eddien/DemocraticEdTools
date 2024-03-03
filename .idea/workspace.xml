@@ -5,15 +5,120 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcdbefa7-4531-4936-afb8-54f63075ea39" name="Changes" comment="Menues and Permissions">
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/database.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/controllers/rooms_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/controllers/rulebook/decision_making_units_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/controllers/rulebook/rule_categories_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/controllers/rulebook/rule_types_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/controllers/rulebook/rules_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/helpers/rooms_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/helpers/rulebook/decision_making_units_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/helpers/rulebook/rule_categories_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/helpers/rulebook/rule_types_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/helpers/rulebook/rules_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/models/room.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/models/rulebook/decision_making_unit.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/models/rulebook/joins/rooms_rule.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/models/rulebook/joins/rule_categories_rule.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/models/rulebook/joins/rule_types_rule.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/models/rulebook/rule.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/models/rulebook/rule_category.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/models/rulebook/rule_content.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/models/rulebook/rule_type.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/policies/decision_making_unit_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/policies/room_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/policies/rule_category_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/policies/rule_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/policies/rule_type_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rooms/_empty_state.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rooms/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rooms/_room.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rooms/create.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rooms/destroy.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rooms/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rooms/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rooms/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rooms/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rooms/update.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/decision_making_units/_decision_making_unit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/decision_making_units/_empty_state.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/decision_making_units/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/decision_making_units/create.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/decision_making_units/destroy.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/decision_making_units/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/decision_making_units/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/decision_making_units/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/decision_making_units/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/decision_making_units/update.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_categories/_empty_state.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_categories/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_categories/_rule_category.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_categories/create.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_categories/destroy.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_categories/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_categories/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_categories/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_categories/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_categories/update.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_types/_empty_state.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_types/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_types/_rule_type.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_types/create.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_types/destroy.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_types/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_types/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_types/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_types/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_types/update.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rules/_empty_state.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rules/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rules/_rule.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rules/create.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rules/destroy.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rules/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rules/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rules/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rules/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/app/views/rulebook/rules/update.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/db/migrate/20240303205038_create_decision_making_units.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/db/migrate/20240303205419_create_group_decision_making_units.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/db/migrate/20240303213654_create_rule_categories.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/db/migrate/20240303213701_create_rooms.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/db/migrate/20240303213710_create_rule_types.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/db/migrate/20240303213740_create_rules.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/db/migrate/20240303214121_create_rule_contents.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/db/migrate/20240303225138_create_rule_categories_rules.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/db/migrate/20240303225145_create_rule_types_rules.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/db/migrate/20240303225220_create_rooms_rules.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/controllers/rooms_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/controllers/rulebook/decision_making_units_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/controllers/rulebook/rule_categories_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/controllers/rulebook/rule_types_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/controllers/rulebook/rules_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/models/decision_making_unit_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/models/group_decision_making_unit_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/models/room_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/models/rooms_rule_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/models/rule_categories_rule_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/models/rule_category_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/models/rule_content_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/models/rule_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/models/rule_type_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/models/rule_types_rule_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/policies/decision_making_unit_policy_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/policies/room_policy_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/policies/rule_category_policy_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/policies/rule_policy_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rails_app/test/policies/rule_type_policy_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scopes/M_C_V.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scopes/M_C_V.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tools_for_democratic_schools.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/nav_drawer_left.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/nav_drawer_left.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/components/navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/config/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/assets/stylesheets/config/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/_nav_drawer_left.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/_nav_drawer_left.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rails_app/app/views/layouts/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/views/layouts/_navbar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/helpers/menu_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/helpers/menu_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/app/models/permissions/group.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/app/models/permissions/group.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rails_app/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rails_app/test/fixtures/apps.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rails_app/test/fixtures/apps.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +160,7 @@
       <scope name="Groups" />
       <scope name="UserManager" />
       <scope name="permissions" />
+      <scope name="database" />
     </order>
   </component>
   <component name="ProjectColorInfo">{
@@ -69,45 +175,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/schule/projects/tools_for_democratic_schools/rails_app/app/views/user_manager/roles&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/snap/rubymine/403/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/schule/projects/tools_for_democratic_schools/rails_app/app/views/rooms",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.scopes",
+    "ts.external.directory.path": "/snap/rubymine/403/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/rails_app/app/views/user_manager/roles" />
-      <recent name="$PROJECT_DIR$/rails_app/app/views/user_manager/apps" />
-      <recent name="$PROJECT_DIR$/rails_app/app/views/user_manager/users" />
-      <recent name="$PROJECT_DIR$/rails_app/app/views/user_manager/membershiplevels" />
-      <recent name="$PROJECT_DIR$/rails_app/app/controllers/user_manager" />
+      <recent name="$PROJECT_DIR$/rails_app/app/views/rooms" />
+      <recent name="$PROJECT_DIR$/rails_app/app/views/rulebook/rules" />
+      <recent name="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_types" />
+      <recent name="$PROJECT_DIR$/rails_app/app/views/rulebook/rule_categories" />
+      <recent name="$PROJECT_DIR$/rails_app/app/views/rulebook/decision_making_units" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rails_app/app/models/rulebook/joins" />
+      <recent name="$PROJECT_DIR$/rails_app/app/models/rulebook" />
       <recent name="$PROJECT_DIR$/rails_app/app/views/layouts" />
       <recent name="$PROJECT_DIR$/rails_app/app/views/layouts/left_nav_drawer" />
       <recent name="$PROJECT_DIR$/rails_app/app/models/permissions" />
-      <recent name="$PROJECT_DIR$/rails_app/app/assets/stylesheets/structure" />
-      <recent name="$PROJECT_DIR$/rails_app/app/controllers/user_manager" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -128,6 +234,9 @@
       <workItem from="1707070305116" duration="14876000" />
       <workItem from="1707086303312" duration="76569000" />
       <workItem from="1707694034126" duration="27650000" />
+      <workItem from="1709245005749" duration="996000" />
+      <workItem from="1709333901905" duration="3964000" />
+      <workItem from="1709485895966" duration="11591000" />
     </task>
     <task id="LOCAL-00001" summary="pin_generator">
       <option name="closed" value="true" />

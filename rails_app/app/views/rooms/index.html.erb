@@ -1,0 +1,17 @@
+<%= turbo_stream_from "rooms" %>
+<div class="container-title">
+  <h1>Räume</h1>
+  <% if policy(Room.new).create? %>
+    <%= link_to icon("fa-solid", "plus", "Raum hinzufügen", class: "fa-1x"),
+                new_room_path,
+                class: "btn btn-green",
+                data: { turbo_frame: dom_id(Room.new) }%>
+  <% end %>
+</div>
+<div class="container-content">
+  <%= turbo_frame_tag Room.new %>
+  <%= turbo_frame_tag "rooms" do %>
+    <%= render "rooms/empty_state" %>
+    <%= render @rooms %>
+  <% end %>
+</div>

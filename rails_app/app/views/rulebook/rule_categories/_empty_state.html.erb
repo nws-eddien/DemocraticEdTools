@@ -1,0 +1,7 @@
+<div class="empty-state empty-state--only-child">
+  <p class="empty-state__text">
+    Es gibt noch keine Kategorien!
+  </p>
+
+  <%= link_to "Regel Kategorie hinzufügen", new_rulebook_rule_category_path, class: "btn btn-green", data: { turbo_frame: dom_id(RuleCategory.new) } %>
+</div>

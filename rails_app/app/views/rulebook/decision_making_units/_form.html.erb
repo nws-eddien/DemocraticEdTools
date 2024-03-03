@@ -1,0 +1,16 @@
+<%= simple_form_for [:rulebook, decision_making_unit], html: {clasS: "form"} do |f| %>
+   <div class="card-content" >
+     <%= form_error_notification(decision_making_unit) %>
+     <div class="list-item">
+       <%= f.input :name, input_html: { autofocus: true } %>
+       <div class="list-item-append">
+         <%= link_to icon("fa-solid", "xmark"), rulebook_decision_making_units_path, class: "btn btn-red mr-2" %>
+         <%= button_tag icon("fa-solid", "floppy-disk"), type: "submit", class: "btn btn-green"  %>
+       </div>
+     </div>
+
+   </div>
+
+
+
+<% end %>

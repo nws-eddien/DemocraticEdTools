@@ -1,0 +1,17 @@
+<%= turbo_stream_from "rule_categories" %>
+<div class="container-title">
+  <h1>Kategorien</h1>
+  <% if policy(RuleCategory.new).create? %>
+    <%= link_to icon("fa-solid", "plus", "Regel Kategorie hinzufügen", class: "fa-1x"),
+                new_rulebook_rule_category_path,
+                class: "btn btn-green",
+                data: { turbo_frame: dom_id(RuleCategory.new) }%>
+  <% end %>
+</div>
+<div class="container-content">
+  <%= turbo_frame_tag RuleCategory.new %>
+  <%= turbo_frame_tag "rule_categories" do %>
+    <%= render "rulebook/rule_categories/empty_state" %>
+    <%= render @rule_categories %>
+  <% end %>
+</div>

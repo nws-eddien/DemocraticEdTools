@@ -1,0 +1,17 @@
+<%= turbo_stream_from "decision_making_units" %>
+<div class="container-title">
+  <h1>Entscheidungsgremien</h1>
+  <% if policy(DecisionMakingUnit.new).create? %>
+    <%= link_to icon("fa-solid", "plus", "Entscheidungsgremium hinzufügen", class: "fa-1x"),
+                new_rulebook_decision_making_unit_path,
+                class: "btn btn-green",
+                data: { turbo_frame: dom_id(DecisionMakingUnit.new) }%>
+  <% end %>
+</div>
+<div class="container-content">
+  <%= turbo_frame_tag DecisionMakingUnit.new %>
+  <%= turbo_frame_tag "decision_making_units" do %>
+    <%= render "rulebook/decision_making_units/empty_state" %>
+    <%= render @decision_making_units %>
+  <% end %>
+</div>

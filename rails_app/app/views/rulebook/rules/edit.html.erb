@@ -1,0 +1,12 @@
+<%= link_to sanitize("&larr; Zurück zu Regeln"), rulebook_rules_path %>
+<div class="container-title">
+  <h1> Regel bearbeiten </h1>
+</div>
+<div class="container-content">
+  <%= turbo_frame_tag @rule do %>
+    <div class="card">
+      <%= render "form", rule: @rule %>
+    </div>
+  <% end %>
+</div>
+

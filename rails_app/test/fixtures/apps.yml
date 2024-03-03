@@ -4,3 +4,6 @@ MediaTime:
 UserManager:
   identifier: UserManager
   name: UserManager
+RuleBook:
+  identifier: Rulebook
+  name: Regelbuch

@@ -1,0 +1,3 @@
+<%= turbo_stream.prepend "rule_categories", partial: @rule_category %>
+<%= turbo_stream.update RuleCategory.new, "" %>
+<%= render_turbo_stream_flash_messages %>

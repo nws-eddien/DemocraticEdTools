@@ -1,0 +1,17 @@
+<%= turbo_stream_from "rules" %>
+<div class="container-title">
+  <h1>Regeln</h1>
+  <% if policy(Rule.new).create? %>
+    <%= link_to icon("fa-solid", "plus", "Regel hinzufügen", class: "fa-1x"),
+                new_rulebook_rule_path,
+                class: "btn btn-green",
+                data: { turbo_frame: dom_id(Rule.new) }%>
+  <% end %>
+</div>
+<div class="container-content">
+  <%= turbo_frame_tag Rule.new %>
+  <%= turbo_frame_tag "rules" do %>
+    <%= render "rulebook/rules/empty_state" %>
+    <%= render @rules %>
+  <% end %>
+</div>

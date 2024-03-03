@@ -1,0 +1,3 @@
+<%= turbo_stream.prepend "decision_making_units", partial: @decision_making_unit %>
+<%= turbo_stream.update DecisionMakingUnit.new, "" %>
+<%= render_turbo_stream_flash_messages %>

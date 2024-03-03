@@ -1,0 +1,7 @@
+<div class="empty-state empty-state--only-child">
+  <p class="empty-state__text">
+    Es gibt noch keine Räume!
+  </p>
+
+  <%= link_to "Raum hinzufügen", new_room_path, class: "btn btn-green", data: { turbo_frame: dom_id(Room.new) } %>
+</div>

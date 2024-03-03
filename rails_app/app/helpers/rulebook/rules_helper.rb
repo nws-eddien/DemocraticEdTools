@@ -1,0 +1,2 @@
+module Rulebook::RulesHelper
+end

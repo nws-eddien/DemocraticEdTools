@@ -2,6 +2,7 @@ class Group < ApplicationRecord
     validates :name, presence: true, allow_blank: false, uniqueness: true
     has_many :membershiplevels, dependent: :destroy
     has_many :users, through: :membershiplevels
+    has_and_belongs_to_many :decision_making_units
     after_create :add_basic_membershiplevel
     after_create_commit -> { broadcast_prepend_later_to "groups", partial: "user_manager/groups/group", locals: { group: self }, target: "groups" }
     after_update_commit -> { broadcast_update_later_to "groups", partial: "user_manager/groups/group", locals: { group: self }, target: self }

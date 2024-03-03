@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_17_143911) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_03_225220) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -52,6 +52,21 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_17_143911) do
     t.index ["name"], name: "index_apps_on_name", unique: true
   end
 
+  create_table "decision_making_units", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "group_decision_making_units", force: :cascade do |t|
+    t.bigint "group_id"
+    t.bigint "decision_making_unit_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["decision_making_unit_id"], name: "index_group_decision_making_units_on_decision_making_unit_id"
+    t.index ["group_id"], name: "index_group_decision_making_units_on_group_id"
+  end
+
   create_table "groups", force: :cascade do |t|
     t.string "name"
     t.integer "default_membershiplevel_id"
@@ -84,7 +99,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_17_143911) do
 
   create_table "media_penalties", force: :cascade do |t|
     t.bigint "media_time_id"
-    t.date "activated_at", default: "2024-02-24"
+    t.date "activated_at", default: "2024-03-03"
     t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -177,6 +192,60 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_17_143911) do
     t.bigint "role_id"
     t.index ["role_id"], name: "index_roles_users_on_role_id"
     t.index ["user_id"], name: "index_roles_users_on_user_id"
+  end
+
+  create_table "room_rules", id: false, force: :cascade do |t|
+    t.bigint "room_id"
+    t.bigint "rule_id"
+    t.index ["room_id"], name: "index_room_rules_on_room_id"
+    t.index ["rule_id"], name: "index_room_rules_on_rule_id"
+  end
+
+  create_table "rooms", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rule_categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rule_categories_rules", id: false, force: :cascade do |t|
+    t.bigint "rule_id"
+    t.bigint "rule_category_id"
+    t.index ["rule_category_id"], name: "index_rule_categories_rules_on_rule_category_id"
+    t.index ["rule_id"], name: "index_rule_categories_rules_on_rule_id"
+  end
+
+  create_table "rule_contents", force: :cascade do |t|
+    t.bigint "rule_id"
+    t.text "text"
+    t.date "decided_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["rule_id"], name: "index_rule_contents_on_rule_id"
+  end
+
+  create_table "rule_types", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rule_types_rules", id: false, force: :cascade do |t|
+    t.bigint "rule_type_id"
+    t.bigint "rule_id"
+    t.index ["rule_id"], name: "index_rule_types_rules_on_rule_id"
+    t.index ["rule_type_id"], name: "index_rule_types_rules_on_rule_type_id"
+  end
+
+  create_table "rules", force: :cascade do |t|
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

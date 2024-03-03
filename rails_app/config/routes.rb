@@ -35,6 +35,17 @@ Rails.application.routes.draw do
     get 'logins/login_display' => 'logins#login_display', as: :login_display
   end
 
+  namespace :rulebook do
+    resources :decision_making_units
+    resources :rule_categories
+    resources :rule_types
+    resources :rules do
+      resources :rule_contents
+    end
+  end
+
+  resources :rooms
+
   devise_for :users, controllers: {
     sessions: 'devise_users/sessions'
   }
